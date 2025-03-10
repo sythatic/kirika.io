@@ -1,0 +1,435 @@
+/* BEGIN AMTRAK*/
+.amtk {
+	background-color: #00537e;
+	color: var(--text-light);
+}
+.amtk-a {
+	background-color: #00b0eb;
+}
+.amtk-b {
+	background-color: #167fa6;
+}
+/* END AMTRAK*/
+/* BEGIN MTA */
+.mta {
+	background-color: #0e61a9;
+}
+.mta-harl {
+	background-color: #0139a6;
+}
+.mta-hudl {
+	background-color: #009b3a;
+}
+.mta-nhl {
+	background-color: #ee0033;
+}
+.mta-pvl {
+	background-color: #94209a;
+}
+.mta-pjl {
+	background-color: #fbb600;
+}
+.mta-bab {
+	background-color: #00985f;
+}
+.mta-ctz {
+	background-color: #4d5357;
+}
+.mta-frb {
+	background-color: #6e3219;
+}
+.mta-hsb {
+	background-color: #ce8e00;
+}
+.mta-lbb {
+	background-color: #ff6318;
+}
+.mta-mtb {
+	background-color: #00b2a9;
+}
+.mta-obb {
+	background-color: #01af3f;
+}
+.mta-pjb {
+	background-color: #006ec7;
+}
+.mta-pwb {
+	background-color: #c60b30;
+}
+.mta-rkb {
+	background-color: #a626aa;
+}
+.mta-whb {
+	background-color: #00a1de;
+}
+.mta-1,
+.mta-2,
+.mta-3 {
+	background-color: #ee352e;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-4,
+.mta-5,
+.mta-6 {
+	background-color: #00933c;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-7 {
+	background-color: #b933ad;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-a,
+.mta-c,
+.mta-e {
+	background-color: #0039a6;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-b,
+.mta-d,
+.mta-f,
+.mta-m {
+	background-color: #ff6319;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-g {
+	background-color: #6cbe45;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-l {
+	background-color: #a7a9ac;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-n,
+.mta-q,
+.mta-r,
+.mta-w {
+	background-color: #fccc0a;
+	color: var(--text-dark);
+	border-radius: var(--obj-circle-radius);
+}
+.mta-j,
+.mta-z {
+	background-color: #996633;
+	border-radius: var(--obj-circle-radius);
+}
+.mta-s,
+.mta-sr,
+.mta-sf {
+	background-color: #808183;
+}
+.mta-s {
+	border-radius: var(--obj-circle-radius);
+}
+.mta-sr,
+.mta-sf {
+	border-radius: var(--obj-round-radius);
+}
+.mta-sir {
+	background-color: #0078c6;
+	border-radius: var(--obj-round-radius);
+}
+/* END MTA */
+/* BEGIN PATH */
+.path {
+	background-color: #0095d3;
+	font-weight: 900;
+}
+.path-wtcn {
+	background-color: #ef3a41;
+}
+.path-33sn {
+	background-color: #fdb827;
+}
+.path-wtch {
+	background-color: #019e58;
+}
+.path-33sh {
+	background-color: #0082c5;
+}
+/* END PATH */
+/* BEGIN NJ TRANSIT*/
+.njt {
+	background: linear-gradient(65deg, #f6863c 33%, #b7178f 33%, #b7178f 66%, #004e9a 66%);
+}
+.njt-acl {
+	background-color: #2e55a5;
+}
+.njt-mnl {
+	background-color: #fbb600;
+}
+.njt-mbl {
+	background-color: #c26366;
+}
+.njt-mtl {
+	background-color: #28943b;
+}
+.njt-nec {
+	background-color: #f54f5e;
+}
+.njt-njcl {
+	background-color: #339cdb;
+}
+.njt-pvl {
+	background-color: #a34e8a;
+}
+.njt-rvl {
+	background-color: #ff9315;
+}
+.njt-hblr {
+	background-color: #502c1e;
+}
+.njt-nlr {
+	background-color: #f473ac;
+}
+.njt-rlr {
+	background-color: #134434;
+}
+.njt-brl {
+	background-color: #95999d;
+}
+.njt-gsb {
+	background-color: #569969;
+}
+/* END NJ TRANSIT*/
+/* BEGIN SEPTA*/
+.sep {
+	background: linear-gradient(40deg, #1f4fa3 50%, #f14728 50%);
+}
+.sep-rr {
+	background-color: #4c748c;
+}
+.sep-l {
+	background-color: #0097d6;
+	border-radius: var(--obj-square-radius);
+}
+.sep-b {
+	background-color: #f26100;
+	border-radius: var(--obj-square-radius);
+}
+.sep-t {
+	background-color: #5a960a;
+	border-radius: var(--obj-square-radius);
+}
+.sep-g {
+	background-color: #ffd700;
+	border-radius: var(--obj-square-radius);
+	color: var(--text-dark);
+}
+.sep-d {
+	background-color: #dc2e6b;
+	border-radius: var(--obj-square-radius);
+}
+.sep-m {
+	background-color: #5f249f;
+	border-radius: var(--obj-square-radius);
+}
+/* END SEPTA*/
+/* BEGIN PATCO*/
+.patc {
+	background-color: #ed154b;
+}
+/* END PATCO*/
+/* BEGIN MBTA*/
+.mbta {
+	background-color: white;
+	color: var(--text-dark);
+}
+.mbta-bl {
+	background-color: #003da5;
+	border-radius: var(--obj-round-radius);
+}
+.mbta-gl {
+	background-color: #00843d;
+	border-radius: var(--obj-round-radius);
+}
+.mbta-ol {
+	background-color: #ed8b00;
+	border-radius: var(--obj-round-radius);
+}
+.mbta-rl {
+	background-color: #da291c;
+	border-radius: var(--obj-round-radius);
+}
+/* END MBTA*/
+/* BEGIN MARC*/
+.marc {
+	background: linear-gradient(0deg, #f26f21 20%, #004f98 20%);
+}
+.lrlink {
+	background: linear-gradient(60deg, #f5c844 15%, #d1353f 15%, #d1353f 85%, #f5c844 85%);
+}
+/* END MARC*/
+/* BEGIN VRE*/
+.vre {
+	background: linear-gradient(0deg, #004683 15%, #ee3e42 15%, #ee3e42 85%, #004683 85%);
+}
+/* END VRE*/
+/* BEGIN WMATA*/
+.wmata {
+	background-color: var(--text-dark);
+}
+.wmata-rd {
+	background-color: #e51737;
+	border-radius: var(--obj-round-radius);
+}
+.wmata-or {
+	background-color: #f7931d;
+	border-radius: var(--obj-round-radius);
+	color: var(--text-dark);
+}
+.wmata-bl {
+	background-color: #0277c0;
+	border-radius: var(--obj-round-radius);
+}
+.wmata-gr {
+	background-color: #01a94e;
+	border-radius: var(--obj-round-radius);
+}
+.wmata-yl {
+	background-color: #fed106;
+	border-radius: var(--obj-round-radius);
+	color: var(--text-dark);
+}
+.wmata-sv {
+	background-color: #a1a3a1;
+	border-radius: var(--obj-round-radius);
+	color: var(--text-dark);
+}
+/* END WMATA*/
+/* BEGIN SAN FRANCISCO BAY AREA*/
+.caltrn {
+	background: radial-gradient(#e31837 50%, #212121 50%, #333 90%);
+}
+.bart {
+	background-color: white;
+	color: #0099d8;
+}
+.bart-r {
+	background-color: #e51737;
+	border-radius: var(--obj-square-radius);
+}
+.bart-o {
+	background-color: #f7931d;
+	border-radius: var(--obj-square-radius);
+	color: var(--text-dark);
+}
+.bart-y {
+	background-color: #fed106;
+	border-radius: var(--obj-square-radius);
+	color: var(--text-dark);
+}
+.bart-g {
+	background-color: #01a94e;
+	border-radius: var(--obj-square-radius);
+}
+.bart-b {
+	background-color: #0277c0;
+	border-radius: var(--obj-square-radius);
+}
+.bart-oak {
+	background-color: #a1a3a1;
+	border-radius: var(--obj-square-radius);
+	color: var(--text-dark);
+}
+/* END SAN FRANCISCO BAY AREA*/
+/* BEGIN METROLINK */
+.metlink {
+	background: linear-gradient(12deg, #003d73 50%, #0075de 50%);
+}
+.metlink-avl {
+	background-color: #05a84e;
+}
+.metlink-iel {
+	background-color: #e91775;
+}
+.metlink-ocl {
+	background-color: #f58420;
+}
+.metlink-rsl {
+	background-color: #642d89;
+}
+.metlink-sbl {
+	background-color: #a41d35;
+}
+.metlink-vcl {
+	background-color: #fcb525;
+}
+.metlink-pvl {
+	background-color: #0671ba;
+}
+.metlink-arr {
+	background: linear-gradient(12deg, #2f548f 0%, #e4e98d 100%);
+}
+.la-metro-a {
+	background-color: #0072bc;
+	border-radius: var(--obj-circle-radius);
+}
+.la-metro-b {
+	background-color: #e3131b;
+	border-radius: var(--obj-circle-radius);
+}
+.la-metro-c {
+	background-color: #58a738;
+	border-radius: var(--obj-circle-radius);
+}
+.la-metro-d {
+	background-color: #a05da5;
+	border-radius: var(--obj-circle-radius);
+}
+.la-metro-e {
+	background-color: #fdb913;
+	border-radius: var(--obj-circle-radius);
+	color: var(--text-dark);
+}
+.la-metro-k {
+	background-color: #e96bb0;
+	border-radius: var(--obj-circle-radius);
+	color: var(--text-dark);
+}
+/* END METROLINK */
+
+
+
+
+
+
+
+
+
+
+
+
+.metra {
+	background-color: #0054a4;
+}
+.briln {
+	background: linear-gradient(0deg, #fbd206 85%, #333 85%);
+	color: var(--text-dark);
+}
+.briln2 {
+	background: linear-gradient(0deg, #1ebe2f 85%, #333 85%);
+}
+.sunrl {
+	background: linear-gradient(0deg, #efb05a 0%, #f2da6b 60%);
+	color: #050708bb;
+}
+.trirl {
+	background: linear-gradient(90deg, white 5%, #9bcd66 5%, #9bcd66 10%, #f58220 10%, #f58220 15%, #0099d8 15%, #0099d8 20%, white 20%);
+	color: #2a6380;
+}
+.ctrl {
+	background: linear-gradient(90deg, white 5%, #ef3e42 5%, #ef3e42 15%, white 15%);
+	color: var(--text-dark);
+}
+.ace {
+	background: linear-gradient(45deg, #643479 25%, #273158 75%);
+}
+.sndr {
+	background-color: #2d376a;
+	font-weight: 600;
+}
+.smart {
+	background: linear-gradient(0deg, #004d00 15%, white 15%, white 85%, #004d00 85%);
+	color: #eb7300;
+	font-weight: 900;
+}
