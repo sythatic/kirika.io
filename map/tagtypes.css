@@ -4,10 +4,16 @@
 	color: var(--text-light);
 }
 .amtk-a {
-	background-color: #00b0eb;
+	background-color: #009ddd;
 }
 .amtk-b {
 	background-color: #167fa6;
+}
+.amtk-c {
+	background-color: #00ada8;
+}
+.amtk-d {
+	background-color: #6d922e;
 }
 /* END AMTRAK*/
 /* BEGIN MTA */
@@ -132,7 +138,6 @@
 /* BEGIN PATH */
 .path {
 	background-color: #0095d3;
-	font-weight: 900;
 }
 .path-wtcn {
 	background-color: #ef3a41;
