@@ -152,7 +152,7 @@ html {
 	padding: 8pt;
 	align-items: center;
 	justify-content: center;
-	border-radius: 8pt;
+	border-radius: var(--obj-generic-radius);
 	color: var(--text-color);
 	background-color: var(--hover-color);
 	border: var(--border);
@@ -404,7 +404,7 @@ footer {
 		margin-top: 1in;
 		border: var(--border);
 		background-color: var(--blur-color);
-		border-radius: 8pt;
+		border-radius: var(--obj-generic-radius);
 		box-shadow: var(--box-shadow);
 		backdrop-filter: var(--generic-blur);
 	}
@@ -452,7 +452,7 @@ footer {
 		padding: 64px;
 		border: var(--border);
 		background-color: var(--blur-color);
-		border-radius: 8pt;
+		border-radius: var(--obj-generic-radius);
 		box-shadow: var(--box-shadow);
 		backdrop-filter: var(--generic-blur);
 
@@ -535,7 +535,7 @@ footer {
 		align-items: center;
 		justify-content: center;
 		text-align: center;
-		border-radius: 8pt;
+		border-radius: var(--obj-generic-radius);
 		background-color: var(--hover-color);
 		border: var(--border);
 		box-shadow: var(--obj-shadow);
@@ -554,7 +554,7 @@ footer {
 	}
 
 	.dblock {
-		border-radius: 8pt;
+		border-radius: var(--obj-generic-radius);
 		padding: .1in;
 		margin: .1in;
 	}
