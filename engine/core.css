@@ -37,6 +37,7 @@
 	--border: 1px solid #ffffff65;
 	--obj-shadow: 0 1px 2px #00000077;
 	--background-image: url('../engine/images/backdrop-d.jpg');
+	--overlay-color: #ffffff25;
 
 }
 
@@ -51,6 +52,7 @@
 	--blur-color: #eeeeeed0;
 	--border: 1px solid #33333365;
 	--background-image: url('../engine/images/backdrop-l.jpg');
+	--overlay-color: #ffffff45;
 }
 
 .clearfix {
@@ -139,8 +141,8 @@ html {
 	display: grid;
 	padding: 0;
 	grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
-	grid-auto-rows: minmax(64px, auto);
-	grid-gap: 8pt;
+	grid-auto-rows: minmax(auto, auto);
+	grid-gap: 8px;
 }
 
 .list a {
@@ -149,12 +151,12 @@ html {
 	font-size: 9pt;
 	text-decoration: none;
 	display: grid;
-	padding: 8pt;
+	padding: 8px;
 	align-items: center;
 	justify-content: center;
 	border-radius: var(--obj-generic-radius);
 	color: var(--text-color);
-	background-color: var(--hover-color);
+	background-color: var(--overlay-color);
 	border: var(--border);
 	box-shadow: var(--obj-shadow);
 }
@@ -162,7 +164,6 @@ html {
 .list a:hover {
 	background-color: var(--hover-color);
 	transition: ease-out .15s;
-	transform: scale(.96);
 	filter: none;
 }
 
@@ -198,7 +199,7 @@ ul.tabberpath a {
 	margin: 0 1pt;
 	text-transform: capitalize;
 	min-width: .75in;
-	background-color: var(--hover-color);
+	background-color: var(--overlay-color);
 	border: var(--border);
 	box-shadow: var(--obj-shadow);
 	text-align: center;
@@ -223,7 +224,7 @@ ul.tabberpath li.tabberactive a:link {
 }
 
 ul.tabberpath li a:hover {
-	background-color: #5fffdc55;
+	background-color: var(--hover-color);
 	transition: ease-out .15s;
 	filter: none;
 }
@@ -243,7 +244,7 @@ ul.tabberpath li a:hover {
 }
 
 .infopane tr {
-	background-color: var(--hover-color);
+	background-color: var(--overlay-color);
 }
 
 .infopane td,
@@ -281,7 +282,7 @@ ul.tabberpath li a:hover {
 .tblock-t td,
 .tblock-t th {
 	border: var(--border);
-	background-color: var(--hover-color);
+	background-color: var(--overlay-color);
 	box-shadow: var(--obj-shadow);
 	text-align: left;
 	font-size: 9pt;
@@ -323,7 +324,7 @@ ul.tabberpath li a:hover {
 	padding: 4pt;
 	border-radius: 3pt;
 	color: var(--text-color);
-	background-color: var(--hover-color);
+	background-color: var(--overlay-color);
 	vertical-align: middle;
 	box-shadow: var(--obj-shadow);
 }
@@ -435,7 +436,7 @@ footer {
 
 	.navi a:hover {
 		background-color: var(--hover-color);
-		transition: ease-out .15s;
+		transition: ease-out 0.15s;
 		filter: none;
 		color: var(--text-light);
 	}
@@ -536,13 +537,13 @@ footer {
 		justify-content: center;
 		text-align: center;
 		border-radius: var(--obj-generic-radius);
-		background-color: var(--hover-color);
+		background-color: var(--overlay-color);
 		border: var(--border);
 		box-shadow: var(--obj-shadow);
 	}
 
 	.navi a:hover {
-		background-color: var(--theme-color1);
+		background-color: var(--hover-color);
 		transition: ease-out .15s;
 		transform: scale(.96);
 		filter: none;
@@ -628,8 +629,8 @@ a {
 }
 
 a:hover {
-	transition: ease-out .15s;
-	filter: brightness(175%);
+	transition: ease-out 0.15s;
+	filter: brightness(1.2);
 }
 
 
