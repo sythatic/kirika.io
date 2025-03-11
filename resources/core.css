@@ -36,7 +36,7 @@
 	--blur-color: #19191990;
 	--border: 1px solid #ffffff65;
 	--obj-shadow: 0 1px 2px #00000077;
-	--background-image: url('../engine/images/backdrop-d.jpg');
+	--background-image: url('../resources/images/backdrop-d.jpg');
 	--overlay-color: #ffffff25;
 
 }
@@ -51,7 +51,7 @@
 	--text-invcolor: white;
 	--blur-color: #eeeeeed0;
 	--border: 1px solid #33333365;
-	--background-image: url('../engine/images/backdrop-l.jpg');
+	--background-image: url('../resources/images/backdrop-l.jpg');
 	--overlay-color: #ffffff45;
 }
 
