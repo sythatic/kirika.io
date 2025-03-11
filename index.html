@@ -1,168 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #212121;
+            color: white;
+        }
+        .container {
+            background: #333;
+            padding: .5in;
+            border-radius: 12pt;
+        }
+        input {
+            display: block;
+            margin: 12pt 0;
+            padding: 12pt;
+            border-radius: 12pt;
+            border: none;
+            outline: none;
+        }
+        button {
+            width: 100%;
+            padding: 12pt;
+            background: goldenrod;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 12pt;
+        }
+        button:hover {
+            background: gold;
+        }
+    </style>
+</head>
+<body>
 
-    <head>
-        <title>Kirika</title>
-        <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="keywords" content="">
-        <meta name="author" content="Sythatic">
-        <link rel="icon" type="image/png" style="color: #ea5454;" href="">
-        <style>
-            /* HTML Structure */
-            html,
-            body {
-                margin: 0;
-                padding: 0;
+    <div class="container">
+        <img src="https://cdn.modrinth.com/data/jKl1Aiiu/8a2ee1304cd7c78c3ea587e97e257e78788ca316_96.webp" alt="Profile Picture" style="width: 96px; border-radius: 50%; display: block; margin: 0 auto;">
+        <h2>Login</h2>
+        <input type="password" id="password" placeholder="Password" required>
+        <button onclick="login()">Submit</button>
+    </div>
+
+    <script>
+        function login() {
+            var password = document.getElementById("password").value;
+
+            // Hardcoded credentials... not secure...
+            var validPassword = "notsecure";
+
+            if (password === validPassword) {
+                window.location.href = "sitemap.html";
+            } else {
+                alert("Invalid Credentials");
             }
+        }
+    </script>
 
-            html {
-                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI Variable', 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                color: #ffffff;
-                background-color: #121212;
-                user-select: none;
-            }
-
-
-            /* T-Block Table */
-            .tblock-t {
-                text-align: left;
-                width: 100%;
-                padding: 0;
-                border-spacing: 4pt;
-            }
-
-            .tblock-t td,
-            .tblock-t th {
-                border: solid .5px #ffffff45;
-                background-color: #ffffff25;
-                text-align: left;
-                font-size: 9pt;
-                padding: 4pt;
-                color: #ffffffdd;
-                vertical-align: middle;
-            }
-
-            .tblock-t th {
-                text-transform: uppercase;
-                text-align: right;
-                width: 1in;
-                color: #00fdc5dd;
-            }
-
-            .tblock-t a {
-                text-decoration: none;
-            }
-
-            /* Footer */
-            footer {
-                text-transform: uppercase;
-                text-align: center;
-                font-size: 9pt;
-                font-weight: 400;
-                margin: .25in;
-                font-weight: normal;
-                opacity: 70%;
-            }
-
-            /*Large Window*/
-            @media only screen and (min-width: 636px) {
-                .window {
-                    padding: .5in;
-                    margin: .25in;
-                    border: solid .5px #ffffff45;
-                    background-color: #191919;
-                    height: 100%;
-                }
-            }
-
-            /*Compact*/
-            @media only screen and (max-width: 635px) {
-                html {
-                    background-color: #191919;
-                }
-
-                body {
-                    background-color: transparent;
-                    padding: .25in;
-                }
-            }
-
-            /*Text Formatting*/
-
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            p,
-            ul {
-                margin: .25in 0;
-            }
-
-            .pre {
-                font-family: 'SF Mono', 'Source Code Pro', 'Menlo', 'Consolas', monospace;
-            }
-
-            hr {
-                border: solid .5px #ffffff65;
-            }
-
-            h1,
-            h2 {
-                font-family: 'Cairo-Play';
-            }
-
-            h2 {
-                border-bottom: solid 1px #ffffff65;
-            }
-
-            p {
-                color: #ffffffdd;
-            }
-
-            x {
-                font-size: small;
-                font-weight: lighter;
-            }
-
-            li x {
-                font-size: inherit;
-                font-weight: inherit;
-            }
-
-            a {
-                text-decoration: none;
-                color: #00fdc5dd;
-            }
-
-            a:hover {
-                transition: ease-out .15s;
-                filter: brightness(175%);
-            }
-
-            #title {
-                margin: 0;
-            }
-        </style>
-    </head>
-
-    <body>
-
-        <div class="content">
-            <div class="window">
-                <h1 style="text-align: center;" id="title">Kirika</h1>
-                <h5 style="text-align: center;" id="title">Sitemap</h5>
-            </br>
-                <table class="tblock-t" style="height: 100%;">
-                    <tr>
-                        <th style="text-align: center;"><a style="color: #54ea66;" href="./guide/guide.html">Transit Guidebook</a></th>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <footer>&copy; Copyright 2011 - <script>document.write(new Date().getFullYear())</script> TSG</footer>
-    </body>
-
+</body>
 </html>
