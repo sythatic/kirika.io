@@ -33,15 +33,3 @@ function openCity(evt, cityName) {
 	document.getElementById(cityName).style.display = "block";
 	evt.currentTarget.className += " active";
 }
-
-// Function to load an external HTML file into a div
-function loadHTML(elementId, file) {
-	fetch(file)
-	.then(response => response.text())
-	.then(data => document.getElementById(elementId).innerHTML = data)
-	.catch(error => console.error('Error loading the file:', error));
-}
-
-// Load modular components
-loadHTML("header", "../header.html");
-loadHTML("navi", "../navi.html");
