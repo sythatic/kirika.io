@@ -104,19 +104,19 @@ html {
 	user-select: text;
 }
 
-#hidden {
+.hidden {
 	display: none;
 	margin: 0;
 	padding: 0;
 }
 
-#spoiler {
+.spoiler {
 	background-color: var(--text-color);
 	border-radius: 2pt;
 	font-weight: normal;
 }
 
-#spoiler:hover {
+.spoiler:hover {
 	background-color: transparent;
 	transition: ease-in-out .15s;
 }
@@ -204,15 +204,13 @@ ul.tabberpath a {
 	box-shadow: var(--obj-shadow);
 	text-align: center;
 	font-weight: 400;
-	text-decoration: none;
 	color: var(--text-color);
 	border-radius: 2pt;
 }
 
 .tabbertab img,
-#avatar {
+.avatar {
 	max-width: 100%;
-	height: auto;
 	box-shadow: var(--obj-shadow);
 	border: var(--border);
 	border-radius: 2pt;
@@ -277,6 +275,7 @@ ul.tabberpath li a:hover {
 	width: 100%;
 	padding: 0;
 	border-spacing: 4pt;
+	height: 100%;
 }
 
 .tblock-t td,
@@ -305,40 +304,6 @@ ul.tabberpath li a:hover {
 
 
 
-/* T-Block Expanded Table */
-.tblock-e {
-	text-align: left;
-	width: 100%;
-	padding: 0;
-	border-spacing: 2pt;
-	box-shadow: var(--obj-shadow);
-	border: var(--border);
-	border-radius: 4pt;
-}
-
-.tblock-e td,
-.tblock-e th {
-	border: var(--border);
-	text-align: left;
-	font-size: 9pt;
-	padding: 4pt;
-	border-radius: 3pt;
-	color: var(--text-color);
-	background-color: var(--overlay-color);
-	vertical-align: middle;
-	box-shadow: var(--obj-shadow);
-}
-
-.tblock-e th {
-	text-transform: uppercase;
-	text-align: right;
-	width: 1in;
-	color: var(--text-color);
-}
-
-.tblock-e a {
-	text-decoration: underline;
-}
 
 
 /* Stats */
@@ -362,7 +327,7 @@ footer {
 	text-align: center;
 	color: var(--text-light);
 	font-size: 9pt;
-	margin: 32px;
+	margin-bottom: 32px;
 	font-weight: normal;
 	opacity: 75%;
 }
@@ -391,8 +356,8 @@ footer {
 /*Prevent Oversize*/
 @media only screen and (min-width: 1280px) {
 	.content {
-		margin: 2in;
-		margin-top: 1in;
+		margin: 256px;
+		margin-top: 128px;
 		margin-bottom: 32px;
 	}
 }
@@ -402,7 +367,7 @@ footer {
 	.window {
 		padding: 64px;
 		margin: 32px;
-		margin-top: 1in;
+		margin-top: 128px;
 		border: var(--border);
 		background-color: var(--blur-color);
 		border-radius: var(--obj-generic-radius);
@@ -441,7 +406,7 @@ footer {
 		color: var(--text-light);
 	}
 
-	#hideondesktop {
+	.hideondesktop {
 		display: none;
 		padding: 0;
 		margin: 0;
@@ -473,7 +438,7 @@ footer {
 
 /*Small Window*/
 @media only screen and (max-width: 850px) {
-	#hide {
+	.hide {
 		display: none;
 		padding: 0;
 		margin: 0;
@@ -491,7 +456,7 @@ footer {
 		text-align: center;
 	}
 
-	#title {
+	.title {
 		text-align: center;
 	}
 }
@@ -506,7 +471,7 @@ footer {
 	}
 
 	.tabbertab img,
-	#avatar {
+	.avatar {
 		width: 100%;
 		margin: 0;
 	}
@@ -521,7 +486,7 @@ footer {
 		display: grid;
 		padding: 0;
 		grid-template-columns: repeat(auto-fill, minmax(164px, 1fr));
-		grid-auto-rows: minmax(0px, auto);
+		grid-auto-rows: minmax(0, auto);
 		grid-gap: 6px;
 		margin: 32px 0;
 	}
@@ -532,7 +497,6 @@ footer {
 		font-size: 11pt;
 		font-weight: bold;
 		display: grid;
-		height: .35in;
 		align-items: center;
 		justify-content: center;
 		text-align: center;
@@ -568,7 +532,7 @@ footer {
 		border-radius: 4pt;
 	}
 
-	#title {
+	.title {
 		text-align: center;
 	}
 }
@@ -622,7 +586,7 @@ a {
 	color: var(--theme-color1);
 }
 
-#footnote {
+.footnote {
 	font-size: 50%;
 	vertical-align: top;
 	content: '+';
@@ -635,7 +599,7 @@ a:hover {
 
 
 
-#title {
+.title {
 	margin: 0;
 }
 
