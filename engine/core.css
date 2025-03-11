@@ -228,45 +228,6 @@ ul.tabberpath li a:hover {
 }
 
 
-/* Infopane */
-.infopane {
-	box-shadow: var(--obj-shadow);
-	border: var(--border);
-	float: right;
-	text-align: left;
-	width: 256px;
-	padding: 0;
-	border-spacing: 2pt;
-	border-radius: 4pt;
-	margin: 0 0 32px 32px;
-}
-
-.infopane tr {
-	background-color: var(--overlay-color);
-}
-
-.infopane td,
-.infopane th {
-	border: var(--border);
-	text-align: left;
-	font-size: 9pt;
-	box-shadow: var(--obj-shadow);
-	padding: 4pt;
-	border-radius: 3pt;
-	color: var(--text-color);
-	vertical-align: middle;
-}
-
-.infopane th {
-	text-transform: uppercase;
-	text-align: right;
-	width: 1in;
-	color: var(--theme-color1);
-}
-
-.infopane a {
-	text-decoration: underline;
-}
 
 
 /* T-Block Table */
@@ -357,17 +318,20 @@ footer {
 @media only screen and (min-width: 1280px) {
 	.content {
 		margin: 256px;
-		margin-top: 128px;
+		margin-top: 64px;
 		margin-bottom: 32px;
 	}
 }
 
 /*Normal Window*/
 @media only screen and (min-width: 636px) {
+	.content {
+		margin-top: 64px;
+	}
+
 	.window {
 		padding: 64px;
 		margin: 32px;
-		margin-top: 128px;
 		border: var(--border);
 		background-color: var(--blur-color);
 		border-radius: var(--obj-generic-radius);
@@ -443,13 +407,6 @@ footer {
 		padding: 0;
 		margin: 0;
 		font-size: 0
-	}
-
-	.infopane {
-		float: unset;
-		box-shadow: var(--obj-shadow);
-		width: 100%;
-		margin: 32px 0;
 	}
 
 	.path {
