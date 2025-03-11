@@ -1,7 +1,7 @@
 // Function to toggle the dark mode theme
-const toggleButton = document.getElementById('dark-theme');
+const toggleButton = document.getElementById('light-theme');
 toggleButton.addEventListener('click', () => {
-	document.documentElement.classList.toggle('dark-mode');
+	document.documentElement.classList.toggle('light-theme');
 });
 
 // Function to toggle the visibility of the collapsible content
