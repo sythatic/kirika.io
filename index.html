@@ -1,69 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #212121;
-            color: white;
-        }
-        .container {
-            background: #333;
-            padding: .5in;
-            border-radius: 12pt;
-        }
-        input {
-            display: block;
-            margin: 12pt 0;
-            padding: 12pt;
-            border-radius: 12pt;
-            border: none;
-            outline: none;
-        }
-        button {
-            width: 100%;
-            padding: 12pt;
-            background: goldenrod;
-            color: white;
-            border: none;
-            cursor: pointer;
-            border-radius: 12pt;
-        }
-        button:hover {
-            background: gold;
-        }
-    </style>
-</head>
-<body>
+<html lang='en' id='top'>
 
-    <div class="container">
-        <img src="https://cdn.modrinth.com/data/jKl1Aiiu/8a2ee1304cd7c78c3ea587e97e257e78788ca316_96.webp" alt="Profile Picture" style="width: 96px; border-radius: 50%; display: block; margin: 0 auto;">
-        <h2>Login</h2>
-        <input type="password" id="password" placeholder="Password" required>
-        <button onclick="login()">Submit</button>
-    </div>
-
-    <script>
-        function login() {
-            var password = document.getElementById("password").value;
-
-            // Hardcoded credentials... not secure...
-            var validPassword = "notsecure";
-
-            if (password === validPassword) {
-                window.location.href = "dash.htm";
-            } else {
-                alert("Invalid Credentials");
+    <head>
+        <title>Kirika</title>
+        <meta charset='utf-8' />
+        <meta name='description' content='' />
+        <meta name='viewport' content='width=device-width, initial-scale=1' />
+        <meta name='keywords' content='' />
+        <meta name='author' content='Sythatic' />
+        <meta property='og:title' content='Kirika' />
+        <meta property='og:description' content='' />
+        <meta property='og:image' content='' />
+        <meta property='og:url' content='https://kirika.io' />
+        <link rel='icon' type='image/svg' href='' />
+        <link rel='stylesheet' href='./engine/core.css' />
+        <link rel='stylesheet' href='./engine/universal-tags.css' />
+        <style>
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
             }
-        }
-    </script>
 
-</body>
+            .container {
+                background: var(--blur-color);
+                backdrop-filter: var(--generic-blur);
+                padding: .5in;
+                border-radius: 12pt;
+            }
+
+            input {
+                display: block;
+                margin: 12pt 0;
+                padding: 12pt;
+                border-radius: 12pt;
+                border: none;
+                outline: none;
+            }
+
+            button {
+                width: 100%;
+                padding: 12pt;
+                background: goldenrod;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 12pt;
+            }
+
+            button:hover {
+                background: gold;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class='content'>
+
+
+            <div class="container">
+                <img src="https://cdn.modrinth.com/data/jKl1Aiiu/8a2ee1304cd7c78c3ea587e97e257e78788ca316_96.webp"
+                    alt="Profile Picture" style="width: 96px; border-radius: 50%; display: block; margin: 0 auto;">
+                <h2>Login</h2>
+                <input type="password" id="password" placeholder="Password" required>
+                <button onclick="login()">Submit</button>
+            </div>
+        </div>
+
+        <script>
+            function login() {
+                var password = document.getElementById("password").value;
+
+                // Hardcoded credentials... not secure...
+                var validPassword = "notsecure";
+
+                if (password === validPassword) {
+                    window.location.href = "dash.htm";
+                } else {
+                    alert("Invalid Credentials");
+                }
+            }
+        </script>
+
+    </body>
+
 </html>
