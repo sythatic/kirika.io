@@ -55,27 +55,31 @@ body {
 	box-shadow: var(--box-shadow);
 	background: var(--window-color);
 }
+
 .navi {
 	border-bottom: var(--border);
 	background: var(--blur-color);
 	backdrop-filter: var(--generic-blur);
 	box-shadow: var(--box-shadow);
-	display: inline-flex;
 	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 1024;
+	display: flex;
+	justify-content: space-around;
 }
+
 .navi a {
-	color: var(--text-color);
-	border-radius: var(--border-radius);
-	margin: 8pt;
+	flex: 1;
+	height: 32px;
 	text-align: center;
-	border: none;
-	width: 100%;
-	font-weight: bold;
+	color: var(--text-color);
 	text-decoration: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
+
 .navi a:hover {
 	color: var(--text-light);
 	background-color: #1680a6;
@@ -201,21 +205,4 @@ a {
 	white-space: nowrap;
 	text-decoration: none;
 	text-align: center;
-}
-.grouped {
-	display: inline-block;
-	white-space: nowrap;
-}
-.origin {
-	background-color: #23a26b;
-}
-.poi {
-	background-color: #ffe250;
-}
-.terminus {
-	background-color: #aa0000;
-}
-.heading {
-	background-color: var(--window-invcolor);
-	color: var(--text-invcolor);
 }

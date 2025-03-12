@@ -1,3 +1,22 @@
+
+.grouped {
+	display: inline-block;
+	white-space: nowrap;
+}
+.origin {
+	background-color: #23a26b;
+}
+.poi {
+	background-color: #ffe250;
+}
+.terminus {
+	background-color: #aa0000;
+}
+.heading {
+	background-color: var(--window-invcolor);
+	color: var(--text-invcolor);
+}
+
 /* BEGIN AMTRAK*/
 .amtk {
 	background-color: #00537e;

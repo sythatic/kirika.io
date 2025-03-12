@@ -13,14 +13,18 @@
 				<meta property="og:url" content="https://kirika.io"/>
 				<link rel="icon" type="image/svg" href="https://www.openrailwaymap.org/img/openrailwaymap.svg"/>
 				<link rel="stylesheet" href="./core.css"/>
-				<link rel="stylesheet" href="./tagtypes.css"/>
+				<link rel="stylesheet" href="./guide-tags.css"/>
 		</head>
 
+		<header>
+			<div class='navi'>
+				<a href='javascript:history.back()'>Go Back</a>
+				<a href="#top">Top</a>
+				<a id="dark-theme">Dark Theme</a>
+			</div>
+		</header>
+
 		<body>
-				<div class="navi">
-						<a href="#top">Top</a>
-						<a id="dark-theme">Dark Theme</a>
-				</div>
 				<div class="content">
 						<div class="window" style="margin-top: 1in; padding: 0.25in;">
 								<h1 style="text-align: center;">Transit Guidebook</h1>
@@ -28,8 +32,6 @@
 						<div class="tabs">
 								<a class="tab" onclick="openCity(event, 'kiosk')">Info Kiosk</a>
 								<a class="tab" onclick="openCity(event, 'trip-1')">Trip 1</a>
-								<a class="tab" onclick="openCity(event, 'trip-2')">Trip 2</a>
-								<a class="tab" onclick="openCity(event, 'trip-3')">Trip 3</a>
 						</div>
 						<div id="kiosk" class="tabcontent">
 								<!-- AMTRAK -->
@@ -1150,72 +1152,6 @@
 						</div>
 
 						<div id="trip-1" class="tabcontent">
-								<div class="window">
-										<table style="text-align: left;">
-												<tr>
-														<th>FROM</th>
-														<th>&nbsp;&nbsp;</th>
-														<th>TO</th>
-												</tr>
-												<tr>
-														<td class="tag origin">Origin</td>
-														<td>&nbsp;&nbsp;</td>
-														<td class="tag terminus">Destionation</td>
-												</tr>
-												<tr>
-														<th>&nbsp;&nbsp;</th>
-												</tr>
-												<tr>
-														<th>Departure</th>
-														<th>&nbsp;&nbsp;</th>
-														<th>Duration</th>
-												</tr>
-												<tr>
-														<td class="tag heading">MM.DD.YYYY @ HH:MM</td>
-														<td>&nbsp;&nbsp;</td>
-														<td class="tag heading">0h 0m</td>
-												</tr>
-										</table>
-										<br/>
-										<hr/>
-										<br/>
-								</div>
-						</div>
-
-						<div id="trip-2" class="tabcontent">
-								<div class="window">
-										<table style="text-align: left;">
-												<tr>
-														<th>FROM</th>
-														<th>&nbsp;&nbsp;</th>
-														<th>TO</th>
-												</tr>
-												<tr>
-														<td class="tag origin">Origin</td>
-														<td>&nbsp;&nbsp;</td>
-														<td class="tag terminus">Destionation</td>
-												</tr>
-												<tr>
-														<th>&nbsp;&nbsp;</th>
-												</tr>
-												<tr>
-														<th>Departure</th>
-														<th>&nbsp;&nbsp;</th>
-														<th>Duration</th>
-												</tr>
-												<tr>
-														<td class="tag heading">MM.DD.YYYY @ HH:MM</td>
-														<td>&nbsp;&nbsp;</td>
-														<td class="tag heading">0h 0m</td>
-												</tr>
-										</table>
-										<br/>
-										<hr/>
-										<br/>
-								</div>
-						</div>
-
-						<div id="trip-3" class="tabcontent">
 								<div class="window">
 										<table style="text-align: left;">
 												<tr>
