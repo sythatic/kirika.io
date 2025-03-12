@@ -1,96 +1,147 @@
 <!DOCTYPE html>
 <html lang="en" id="top">
-		<head>
-				<title>Transit Guidebook</title>
-				<meta charset="utf-8"/>
-				<meta name="description" content="A comprehensive guidebook for transit systems."/>
-				<meta name="viewport" content="width=device-width, initial-scale=1"/>
-				<meta name="keywords" content="transit, guidebook, railway, transportation"/>
-				<meta name="author" content="Sythatic"/>
-				<meta property="og:title" content="Transit Guidebook"/>
-				<meta property="og:description" content="A comprehensive guidebook for transit systems."/>
-				<meta property="og:image" content="https://www.openrailwaymap.org/img/openrailwaymap.svg"/>
-				<meta property="og:url" content="https://kirika.io"/>
-				<link rel="icon" type="image/svg" href="https://www.openrailwaymap.org/img/openrailwaymap.svg"/>
-				<link rel="stylesheet" href="./core.css"/>
-				<link rel="stylesheet" href="./guide-tags.css"/>
-		</head>
 
-		<header>
-			<div class='navi'>
-				<a href='javascript:history.back()'>Go Back</a>
-				<a href="#top">Top</a>
-				<a id="dark-theme">Dark Theme</a>
+	<head>
+		<title>Transit Guidebook</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="A comprehensive guidebook for transit systems." />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="keywords" content="transit, guidebook, railway, transportation" />
+		<meta name="author" content="Sythatic" />
+		<meta property="og:title" content="Transit Guidebook" />
+		<meta property="og:description" content="A comprehensive guidebook for transit systems." />
+		<meta property="og:image" content="https://www.openrailwaymap.org/img/openrailwaymap.svg" />
+		<meta property="og:url" content="https://kirika.io" />
+		<link rel="icon" type="image/svg" href="https://www.openrailwaymap.org/img/openrailwaymap.svg" />
+		<link rel="stylesheet" href="./core.css" />
+		<link rel="stylesheet" href="./guide-tags.css" />
+	</head>
+
+	<header>
+		<div class='navi'>
+			<a href='javascript:history.back()'>Go Back</a>
+			<a href="#top">Top</a>
+			<a id="dark-theme">Dark Theme</a>
+		</div>
+	</header>
+
+	<body>
+		<div class="content">
+			<div class="window" style="margin-top: 1in; padding: 0.25in;">
+				<h1 style="text-align: center;">Transit Guidebook</h1>
 			</div>
-		</header>
-
-		<body>
-				<div class="content">
-						<div class="window" style="margin-top: 1in; padding: 0.25in;">
-								<h1 style="text-align: center;">Transit Guidebook</h1>
-						</div>
-						<div class="tabs">
-								<a class="tab" onclick="openCity(event, 'kiosk')">Info Kiosk</a>
-								<a class="tab" onclick="openCity(event, 'trip-1')">Trip 1</a>
-						</div>
-						<div id="kiosk" class="tabcontent">
-								<!-- AMTRAK -->
-								<div class="window">
-										<a class="tag amtk" target="_blank" href="https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/Maps/Amtrak-System-Map-020923.pdf">Amtrak</a><br/>
-										<br/>
-										<div>
-												<a class="tag amtk-a" target="_blank" href="https://www.amtrak.com/routes/acela-train.html">Acela</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/adirondack-train.html">Adirondack</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/cascades-train.html">Amtrak Cascades</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/amtrak-hartford-line-train.html">Amtrak Hartford Line</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/auto-train.html">Auto Train</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/berkshire-flyer-train.html">Berkshire Flyer</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/michigan-services-train">Blue Water</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/borealis-train.html">Borealis</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/capitol-corridor-train.html">California Zephyr</a>
-												<a class="tag amtk-c" target="_blank" href="https://www.amtrak.com/routes/capitol-corridor-train.html">Capitol Corridor</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/floridian-train.html">Capitol Limited &#10013;</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/cardinal-train.html">Cardinal</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/illinois-services-train.html">Carl Sandburg</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/carolinian-train.html">Carolinian</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/city-of-new-orleans-train.html">City of New Orleans</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/coast-starlight-train.html">Coast Starlight</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/crescent-train.html">Crescent</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/downeaster-train.html">Downeaster</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/empire-builder-train.html">Empire Builder</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/empire-service-train.html">Empire Service</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/ethan-allen-express-train.html">Ethan Allen Express</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/floridian-train.html">Floridian</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/heartland-flyer-train.html">Heartland Flyer</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/hiawatha-train.html">Hiawatha</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/illinois-services-train.html">Illinois Zephyr</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/illinois-services-train.html">Illini Service</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/keystone-service-train.html">Keystone Service</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/lake-shore-limited-train.html">Lake Shore Limited</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/illinois-services-train.html">Lincoln Service</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/lincoln-service-missouri-river-runner-train.html">L.S. Missouri River Runner</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/maple-leaf-train.html">Maple Leaf</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/missouri-river-runner-train.html">Missouri River Runner</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/northeast-regional-train.html">Northeast Regional</a>
-												<a class="tag amtk-c" target="_blank" href="https://www.amtrak.com/routes/pacific-surfliner-train.html">Pacific Surfliner</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/silver-service-palmetto-train.html">Palmetto</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/pennsylvanian-train.html">Pennsylvanian</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/michigan-services-train">Pere Marquette</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/piedmont-train.html">Piedmont</a>
-												<a class="tag amtk-c" target="_blank" href="https://www.amtrak.com/routes/san-joaquins-train.html">San Joaquins</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/illinois-services-train.html">Saluki</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/silver-service-palmetto-train.html">Silver Meteor</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/floridian-train.html">Silver Star &#10013;</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/southwest-chief-train.html">Southwest Chief</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/sunset-limited-train.html">Sunset Limited</a>
-												<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/valley-flyer-train.html">Texas Eagle</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/valley-flyer-train.html">Valley Flyer</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/vermonter-train.html">Vermonter</a>
-												<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/michigan-services-train">Wolverine</a>
-										</div>
-								</div>
-								<!-- CT RAIL / MBTA -->
-								<!--div class="window">
+			<div class="tabs">
+				<a class="tab" onclick="openCity(event, 'kiosk')">Info Kiosk</a>
+				<a class="tab" onclick="openCity(event, 'trip-1')">Trip 1</a>
+				<a class="tab" onclick="openCity(event, 'nec-rte')">Northeast Corridor</a>
+			</div>
+			<div id="kiosk" class="tabcontent">
+				<!-- AMTRAK -->
+				<div class="window">
+					<a class="tag amtk" target="_blank"
+						href="https://www.amtrak.com/content/dam/projects/dotcom/english/public/documents/Maps/Amtrak-System-Map-020923.pdf">Amtrak</a><br />
+					<br />
+					<div>
+						<a class="tag amtk-a" target="_blank" href="https://www.amtrak.com/routes/acela-train.html">Acela</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/adirondack-train.html">Adirondack</a>
+						<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/cascades-train.html">Amtrak
+							Cascades</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/amtrak-hartford-line-train.html">Amtrak Hartford Line</a>
+						<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/auto-train.html">Auto
+							Train</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/berkshire-flyer-train.html">Berkshire Flyer</a>
+						<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/michigan-services-train">Blue
+							Water</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/borealis-train.html">Borealis</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/capitol-corridor-train.html">California Zephyr</a>
+						<a class="tag amtk-c" target="_blank"
+							href="https://www.amtrak.com/routes/capitol-corridor-train.html">Capitol Corridor</a>
+						<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/floridian-train.html">Capitol
+							Limited &#10013;</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/cardinal-train.html">Cardinal</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/illinois-services-train.html">Carl Sandburg</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/carolinian-train.html">Carolinian</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/city-of-new-orleans-train.html">City of New Orleans</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/coast-starlight-train.html">Coast Starlight</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/crescent-train.html">Crescent</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/downeaster-train.html">Downeaster</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/empire-builder-train.html">Empire Builder</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/empire-service-train.html">Empire Service</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/ethan-allen-express-train.html">Ethan Allen Express</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/floridian-train.html">Floridian</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/heartland-flyer-train.html">Heartland Flyer</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/hiawatha-train.html">Hiawatha</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/illinois-services-train.html">Illinois Zephyr</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/illinois-services-train.html">Illini Service</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/keystone-service-train.html">Keystone Service</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/lake-shore-limited-train.html">Lake Shore Limited</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/illinois-services-train.html">Lincoln Service</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/lincoln-service-missouri-river-runner-train.html">L.S. Missouri
+							River Runner</a>
+						<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/routes/maple-leaf-train.html">Maple
+							Leaf</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/missouri-river-runner-train.html">Missouri River Runner</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/northeast-regional-train.html">Northeast Regional</a>
+						<a class="tag amtk-c" target="_blank"
+							href="https://www.amtrak.com/routes/pacific-surfliner-train.html">Pacific Surfliner</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/silver-service-palmetto-train.html">Palmetto</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/pennsylvanian-train.html">Pennsylvanian</a>
+						<a class="tag amtk-b" target="_blank" href="https://www.amtrak.com/michigan-services-train">Pere
+							Marquette</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/piedmont-train.html">Piedmont</a>
+						<a class="tag amtk-c" target="_blank" href="https://www.amtrak.com/routes/san-joaquins-train.html">San
+							Joaquins</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/illinois-services-train.html">Saluki</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/silver-service-palmetto-train.html">Silver Meteor</a>
+						<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/floridian-train.html">Silver
+							Star &#10013;</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/southwest-chief-train.html">Southwest Chief</a>
+						<a class="tag amtk-d" target="_blank"
+							href="https://www.amtrak.com/routes/sunset-limited-train.html">Sunset Limited</a>
+						<a class="tag amtk-d" target="_blank" href="https://www.amtrak.com/routes/valley-flyer-train.html">Texas
+							Eagle</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/valley-flyer-train.html">Valley Flyer</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/routes/vermonter-train.html">Vermonter</a>
+						<a class="tag amtk-b" target="_blank"
+							href="https://www.amtrak.com/michigan-services-train">Wolverine</a>
+					</div>
+				</div>
+				<!-- CT RAIL / MBTA -->
+				<!--div class="window">
 										<a class="tag ctrl">&nbsp;&nbsp;CT Rail</a><br/>
 										<br/>
 										<a class="tag mbta">MBTA</a>
@@ -107,894 +158,897 @@
 										</div>
 										<br/>
 								</div-->
-								<!-- MTA -->
-								<div class="window">
-										<a class="tag mta">MTA</a></br></br>
-										<a target="_blank" href="https://www.mta.info/map/22461">Railroad Map</a>
-										<h3>Metro-North</h3>
-										<a class="collapsible mta-harl">Harlem Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Hudson Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-hudl">Hudson Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Harlem Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-nhl">New Haven Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">New Haven Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-nhl">Waterbury Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">New Haven Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-nhl">Danbury Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">New Haven Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-nhl">New Canaan Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">New Haven Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-pvl">Pascack Valley Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">New Haven Line</a>
-												</div>
-										</div>
-										<a class="collapsible mta-pjl">Port Jervis Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">New Haven Line</a>
-												</div>
-										</div>
-										<br/>
-										<h3>LIRR</h3>
-										<a class="collapsible mta-bab">Babylon Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Babylon Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-ctz">City Terminal Zone</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Far Rockaway Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-frb">Far Rockaway Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Far Rockaway Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-hsb">Hempstead Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Hempstead Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-lbb">Long Beach Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Long Beach Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-mtb">Montauk Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Montauk Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-obb">Oyster Bay Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Oyster Bay Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-pjb">Port Jefferson Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Port Jefferson Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-pwb">Port Washington Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Port Washington Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-rkb">Ronkonkoma Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Ronkonkoma Branch</a>
-												</div>
-										</div>
-										<a class="collapsible mta-whb">West Hempstead Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">West Hempstead Branch</a>
-												</div>
-										</div>
-										<h3>Subway / Metro</h3>
-										<a target="_blank" href="https://www.mta.info/map/5256">Subway Map</a></br></br>
-												<a class="tag mta-1">1</a>
-												<a class="tag mta-2">2</a>
-												<a class="tag mta-3">3</a>
-												<a class="tag mta-4">4</a>
-												<a class="tag mta-5">5</a>
-												<a class="tag mta-6">6</a>
-												<a class="tag mta-7">7</a>
-												<a class="tag mta-a">A</a>
-												<a class="tag mta-c">C</a>
-												<a class="tag mta-e">E</a>
-												<a class="tag mta-b">B</a>
-												<a class="tag mta-d">D </a>
-												<a class="tag mta-f">F</a>
-												<a class="tag mta-m">M</a>
-												<a class="tag mta-g">G</a>
-												<a class="tag mta-l">L</a>
-												<a class="tag mta-n">N</a>
-												<a class="tag mta-q">Q</a>
-												<a class="tag mta-r">R</a>
-												<a class="tag mta-w">W</a>
-												<a class="tag mta-j">J</a>
-												<a class="tag mta-z">Z</a>
-												<a class="tag mta-s">S</a>
-												<a class="tag mta-sf">SF</a>
-												<a class="tag mta-sr">SR</a>
-												<a class="tag mta-sir">SIR</a>
-								</div>
-								<!-- PATH -->
-								<div class="window">
-									<a class="tag path">PATH</a>
-									<div class="container">
-									<a class="collapsible path-wtcn">Newark &#8226; World Trade Center</a>
-									<div class="folded">
-											<div class="timetable">
-													<a class="srvto amtk">Newark Penn Stn</a>
-													<a class="srvto">Harrison</a>
-													<a class="srvto">Journal Sq</a>
-													<a class="srvto">Grove St</a>
-													<a class="srvto">Exchange Place</a>
-													<a class="srvto">World Trade Center</a>
-											</div>
-									</div>
-									<a class="collapsible path-33sn">Journal Sq &#8226; 33rd St</a>
-									<div class="folded">
-										<div class="timetable">
-												<a class="srvto">Journal Sq</a>
-												<a class="srvto">Grove St</a>
-												<a class="srvto">Newport</a>
-												<a class="srvto">Christopher St</a>
-												<a class="srvto">9th St</a>
-												<a class="srvto">14th St</a>
-												<a class="srvto">23rd St</a>
-												<a class="srvto">33rd St</a>
-										</div>
-									</div>
-									<a class="collapsible path-wtch">Hoboken &#8226; World Trade Center</a>
-									<div class="folded">
-											<div class="timetable">
-												<a class="srvto">Hoboken</a>
-												<a class="srvto">Newport</a>
-												<a class="srvto">Exchange Place</a>
-												<a class="srvto">World Trade Center</a>
-											</div>
-									</div>
-									<a class="collapsible path-33sh">Hoboken &#8226; 33rd St</a>
-									<div class="folded">
-											<div class="timetable">
-												<a class="srvto">Hoboken</a>
-												<a class="srvto">Christopher St</a>
-												<a class="srvto">9th St</a>
-												<a class="srvto">14th St</a>
-												<a class="srvto">23rd St</a>
-												<a class="srvto">33rd St</a>
-											</div>
-									</div>
-									</div>
-								</div>
-								<!-- NJ TRANSIT -->
-								<div class="window">
-										<a class="tag njt" target="_blank" href="https://content.njtransit.com/sites/default/files/pdfs/maps/RSM_Geographic_110123.pdf">NJ Transit</a><br/>
-										<br/>
-										<a class="collapsible njt-nec">Northeast Corridor</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">New York &#8226; Penn Stn</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto amtk">Newark &#8226; Penn Stn</a>
-														<a class="srvto amtk">Newark Liberty Intl Airport</a>
-														<a class="srvto">North Elizabeth</a>
-														<a class="srvto">Elizabeth</a>
-														<a class="srvto">Linden</a>
-														<a class="srvto">Rahway</a>
-														<a class="srvto amtk">Metropark</a>
-														<a class="srvto">Metuchen</a>
-														<a class="srvto">Edison</a>
-														<a class="srvto amtk">New Brunswick</a>
-														<a class="srvto">Jersey Ave &#10013;</a>
-														<a class="srvto amtk">Princeton Junction</a>
-														<a class="srvto">Hamilton</a>
-														<a class="srvto amtk">Trenton</a>
-												</div>
-										</div>
-										<a class="collapsible njt-acl">Atlantic City Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Atlantic City</a>
-														<a class="srvto">Absecon</a>
-														<a class="srvto">Egg Harbor City</a>
-														<a class="srvto">Hammonton</a>
-														<a class="srvto">Atco</a>
-														<a class="srvto">Lindenwold</a>
-														<a class="srvto">Cherry Hill</a>
-														<a class="srvto">Pennsauken</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-												</div>
-										</div>
-										<a class="collapsible njt-mnl">Main Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto">Kingsland</a>
-														<a class="srvto">Lyndhurst</a>
-														<a class="srvto">Delawanna</a>
-														<a class="srvto">Passaic</a>
-														<a class="srvto">Clifton</a>
-														<a class="srvto">Paterson</a>
-														<a class="srvto">Hawthorne</a>
-														<a class="srvto">Glen Rock &#8226; Main Line</a>
-														<a class="srvto">Ridgewood</a>
-														<a class="srvto">Ho-Ho-Kus</a>
-														<a class="srvto">Waldwick</a>
-														<a class="srvto">Allendale</a>
-														<a class="srvto">Ramsey</a>
-														<a class="srvto">Ramsey &#8226; Rte 17</a>
-														<a class="srvto">Hahwah</a>
-														<a class="srvto">Suffern</a>
-														<a class="srvto">Harriman</a>
-														<a class="srvto">Salisbury Mills &#8226; Cornwall</a>
-														<a class="srvto">Campbell Hall</a>
-														<a class="srvto">Middletown</a>
-														<a class="srvto">Otisville</a>
-														<a class="srvto">Port Jervis</a>
-												</div>
-										</div>
-										<a class="collapsible njt-brl">Bergen Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto">Rutherford</a>
-														<a class="srvto">Wesmont</a>
-														<a class="srvto">Garfield</a>
-														<a class="srvto">Plauderville</a>
-														<a class="srvto">Broadway</a>
-														<a class="srvto">Radburn</a>
-														<a class="srvto">Glen Rock &#8226; Boro Hall</a>
-														<a class="srvto">Ridgewood</a>
-														<a class="srvto">Ho-Ho-Kus</a>
-														<a class="srvto">Waldwick</a>
-														<a class="srvto">Allendale</a>
-														<a class="srvto">Ramsey</a>
-														<a class="srvto">Ramsey &#8226; Rte 17</a>
-														<a class="srvto">Hahwah</a>
-														<a class="srvto">Suffern</a>
-														<a class="srvto">Harriman</a>
-														<a class="srvto">Salisbury Mills &#8226; Cornwall</a>
-														<a class="srvto">Campbell Hall</a>
-														<a class="srvto">Middletown</a>
-														<a class="srvto">Otisville</a>
-														<a class="srvto">Port Jervis</a>
-												</div>
-										</div>
-										<a class="collapsible njt-mbl">Montclair &#8226; Boonton Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">New York &#8226; Penn Stn</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Newark &#8226; Broad St</a>
-														<a class="srvto">Watsessing</a>
-														<a class="srvto">Bloomfield</a>
-														<a class="srvto">Glen Ridge</a>
-														<a class="srvto">Bay Street</a>
-														<a class="srvto">Walnut Street</a>
-														<a class="srvto">Watchung Ave</a>
-														<a class="srvto">Upper Montclair</a>
-														<a class="srvto">Mountain Ave</a>
-														<a class="srvto">Montclair Heights</a>
-														<a class="srvto">Montclair State Univ</a>
-														<a class="srvto">Little Falls</a>
-														<a class="srvto">Wayne &#8226; Rte 23</a>
-														<a class="srvto">Mountain View</a>
-														<a class="srvto">Lincoln Park</a>
-														<a class="srvto">Towaco</a>
-														<a class="srvto">Boonton</a>
-														<a class="srvto">Mountain Lakes</a>
-														<a class="srvto">Denville</a>
-														<a class="srvto">Dover</a>
-														<a class="srvto">Mount Arlington</a>
-														<a class="srvto">Lake Hopatcong</a>
-														<a class="srvto">Netcong</a>
-														<a class="srvto">Mount Olive</a>
-														<a class="srvto">Hackettstown</a>
-												</div>
-										</div>
-										<a class="collapsible njt-mtl">Morristown Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">New York &#8226; Penn Stn</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Newark &#8226; Broad St</a>
-														<a class="srvto">East Orange</a>
-														<a class="srvto">Brick Church</a>
-														<a class="srvto">Orange</a>
-														<a class="srvto">Highland Ave</a>
-														<a class="srvto">Mountain Station</a>
-														<a class="srvto">South Orange</a>
-														<a class="srvto">Maplewood</a>
-														<a class="srvto">Millburn</a>
-														<a class="srvto">Short Hills</a>
-														<a class="srvto">Summit</a>
-														<a class="srvto">Chatham</a>
-														<a class="srvto">Madison</a>
-														<a class="srvto">Convent Station</a>
-														<a class="srvto">Morristown</a>
-														<a class="srvto">Morris Plains</a>
-														<a class="srvto">Mount Tabor</a>
-														<a class="srvto">Denville</a>
-														<a class="srvto">Dover</a>
-														<a class="srvto">Mount Arlington</a>
-														<a class="srvto">Lake Hopatcong</a>
-														<a class="srvto">Netcong</a>
-														<a class="srvto">Mount Olive</a>
-														<a class="srvto">Hackettstown</a>
-												</div>
-										</div>
-										<a class="collapsible njt-gsb">Gladstone Branch</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">New York &#8226; Penn Stn</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Newark &#8226; Broad St</a>
-														<a class="srvto">East Orange</a>
-														<a class="srvto">Brick Church</a>
-														<a class="srvto">Orange</a>
-														<a class="srvto">Highland Ave</a>
-														<a class="srvto">Mountain Station</a>
-														<a class="srvto">South Orange</a>
-														<a class="srvto">Maplewood</a>
-														<a class="srvto">Millburn</a>
-														<a class="srvto">Short Hills</a>
-														<a class="srvto">Summit</a>
-														<a class="srvto">New Providence</a>
-														<a class="srvto">Murray Hill</a>
-														<a class="srvto">Berkeley Heights</a>
-														<a class="srvto">Gillette</a>
-														<a class="srvto">Stirling</a>
-														<a class="srvto">Millington</a>
-														<a class="srvto">Lyons</a>
-														<a class="srvto">Basking Ridge</a>
-														<a class="srvto">Bernardsville</a>
-														<a class="srvto">Far Hills</a>
-														<a class="srvto">Peapack</a>
-														<a class="srvto">Gladstone</a>
-												</div>
-										</div>
-										<a class="collapsible njt-njcl">North Jersey Coast Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">New York &#8226; Penn Stn</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto amtk">Newark &#8226; Penn Stn</a>
-														<a class="srvto amtk">Newark Liberty Intl Airport</a>
-														<a class="srvto">North Elizabeth</a>
-														<a class="srvto">Elizabeth</a>
-														<a class="srvto">Linden</a>
-														<a class="srvto">Rahway</a>
-														<a class="srvto">Avenel</a>
-														<a class="srvto">Woodbridge</a>
-														<a class="srvto">Perth Amboy</a>
-														<a class="srvto">South Amboy</a>
-														<a class="srvto">Aberdeen-Matawan</a>
-														<a class="srvto">Middletown</a>
-														<a class="srvto">Red Bank</a>
-														<a class="srvto">Little Silver</a>
-														<a class="srvto">Monmouth Park &#10013;</a>
-														<a class="srvto">Long Branch</a>
-														<a class="srvto">Elberon</a>
-														<a class="srvto">Allenhurst</a>
-														<a class="srvto">Asbury Park</a>
-														<a class="srvto">Bradley Beach</a>
-														<a class="srvto">Belmar</a>
-														<a class="srvto">Spring Lake</a>
-														<a class="srvto">Manasquan</a>
-														<a class="srvto">Point Pleasant Beach</a>
-														<a class="srvto">Bay Head</a>
-												</div>
-										</div>
-										<a class="collapsible njt-pvl">Pascack Valley Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto">Wood-Ridge</a>
-														<a class="srvto">Teterboro</a>
-														<a class="srvto">Essex St</a>
-														<a class="srvto">Anderson St</a>
-														<a class="srvto">New Bridge Landing</a>
-														<a class="srvto">River Edge</a>
-														<a class="srvto">Oradell</a>
-														<a class="srvto">Emerson</a>
-														<a class="srvto">Westwood</a>
-														<a class="srvto">Hillsdale</a>
-														<a class="srvto">Woodcliff Lake</a>
-														<a class="srvto">Park Ridge</a>
-														<a class="srvto">Montvale</a>
-														<a class="srvto">Pearl River</a>
-														<a class="srvto">Nanuet</a>
-														<a class="srvto">Spring Valley</a>
-												</div>
-										</div>
-										<a class="collapsible njt-rvl">Raritan Valley Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">New York &#8226; Penn Stn</a>
-														<a class="srvto">Secaucus</a>
-														<a class="srvto amtk">Newark &#8226; Penn Stn</a>
-														<a class="srvto">Union</a>
-														<a class="srvto">Roselle Park</a>
-														<a class="srvto">Cranford</a>
-														<a class="srvto">Garwood</a>
-														<a class="srvto">Westfield</a>
-														<a class="srvto">Fanwood</a>
-														<a class="srvto">Netherwood</a>
-														<a class="srvto">Plainfield</a>
-														<a class="srvto">Dunellen</a>
-														<a class="srvto">Bound Brook</a>
-														<a class="srvto">Bridgewater</a>
-														<a class="srvto">Somerville</a>
-														<a class="srvto">Raritan</a>
-														<a class="srvto">North Branch</a>
-														<a class="srvto">White House</a>
-														<a class="srvto">Lebanon</a>
-														<a class="srvto">Annandale</a>
-														<a class="srvto">High Bridge</a>
-												</div>
-										</div>
-										<a class="collapsible njt-hblr">Hudson &#8226; Bergen Light Rail</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Tonnelle Ave &#8226; North Bergen</a>
-														<a class="srvto">Bergenline Ave &#8226; Union City</a>
-														<a class="srvto">Port Imperial &#8226; Weehawken</a>
-														<a class="srvto">Lincoln Harbor</a>
-														<a class="srvto">9th St &#8226; Congress St</a>
-														<a class="srvto">2nd St</a>
-														<a class="srvto">Hoboken</a>
-														<a class="srvto">Newport</a>
-														<a class="srvto">Harsimus Cove</a>
-														<a class="srvto">Harborside</a>
-														<a class="srvto">Exchange Pl</a>
-														<a class="srvto">Essex St</a>
-														<a class="srvto">Marin Blvd</a>
-														<a class="srvto">Jersey Ave</a>
-														<a class="srvto">Liberty State Pk</a>
-														<a class="srvto">Garfield Ave</a>
-														<a class="srvto">Martin Luther King Dr</a>
-														<a class="srvto">West Side Ave</a>
-														<a class="srvto">Richard St</a>
-														<a class="srvto">Danforth Ave</a>
-														<a class="srvto">45th St</a>
-														<a class="srvto">34th St</a>
-														<a class="srvto">22nd St</a>
-														<a class="srvto">8th St</a>
-												</div>
-										</div>
+				<!-- MTA -->
+				<div class="window">
+					<a class="tag mta">MTA</a></br></br>
+					<a target="_blank" href="https://www.mta.info/map/22461">Railroad Map</a>
+					<h3>Metro-North</h3>
+					<a class="collapsible mta-harl">Harlem Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Hudson Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-hudl">Hudson Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Harlem Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-nhl">New Haven Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">New Haven Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-nhl">Waterbury Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">New Haven Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-nhl">Danbury Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">New Haven Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-nhl">New Canaan Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">New Haven Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-pvl">Pascack Valley Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">New Haven Line</a>
+						</div>
+					</div>
+					<a class="collapsible mta-pjl">Port Jervis Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">New Haven Line</a>
+						</div>
+					</div>
+					<br />
+					<h3>LIRR</h3>
+					<a class="collapsible mta-bab">Babylon Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Babylon Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-ctz">City Terminal Zone</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Far Rockaway Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-frb">Far Rockaway Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Far Rockaway Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-hsb">Hempstead Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Hempstead Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-lbb">Long Beach Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Long Beach Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-mtb">Montauk Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Montauk Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-obb">Oyster Bay Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Oyster Bay Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-pjb">Port Jefferson Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Port Jefferson Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-pwb">Port Washington Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Port Washington Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-rkb">Ronkonkoma Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Ronkonkoma Branch</a>
+						</div>
+					</div>
+					<a class="collapsible mta-whb">West Hempstead Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">West Hempstead Branch</a>
+						</div>
+					</div>
+					<h3>Subway / Metro</h3>
+					<a target="_blank" href="https://www.mta.info/map/5256">Subway Map</a></br></br>
+					<a class="tag mta-1">1</a>
+					<a class="tag mta-2">2</a>
+					<a class="tag mta-3">3</a>
+					<a class="tag mta-4">4</a>
+					<a class="tag mta-5">5</a>
+					<a class="tag mta-6">6</a>
+					<a class="tag mta-7">7</a>
+					<a class="tag mta-a">A</a>
+					<a class="tag mta-c">C</a>
+					<a class="tag mta-e">E</a>
+					<a class="tag mta-b">B</a>
+					<a class="tag mta-d">D </a>
+					<a class="tag mta-f">F</a>
+					<a class="tag mta-m">M</a>
+					<a class="tag mta-g">G</a>
+					<a class="tag mta-l">L</a>
+					<a class="tag mta-n">N</a>
+					<a class="tag mta-q">Q</a>
+					<a class="tag mta-r">R</a>
+					<a class="tag mta-w">W</a>
+					<a class="tag mta-j">J</a>
+					<a class="tag mta-z">Z</a>
+					<a class="tag mta-s">S</a>
+					<a class="tag mta-sf">SF</a>
+					<a class="tag mta-sr">SR</a>
+					<a class="tag mta-sir">SIR</a>
+				</div>
+				<!-- PATH -->
+				<div class="window">
+					<a class="tag path">PATH</a>
+					<div class="container">
+						<a class="collapsible path-wtcn">Newark &#8226; World Trade Center</a>
+						<div class="folded">
+							<div class="timetable">
+								<a class="srvto amtk">Newark Penn Stn</a>
+								<a class="srvto">Harrison</a>
+								<a class="srvto">Journal Sq</a>
+								<a class="srvto">Grove St</a>
+								<a class="srvto">Exchange Place</a>
+								<a class="srvto">World Trade Center</a>
+							</div>
+						</div>
+						<a class="collapsible path-33sn">Journal Sq &#8226; 33rd St</a>
+						<div class="folded">
+							<div class="timetable">
+								<a class="srvto">Journal Sq</a>
+								<a class="srvto">Grove St</a>
+								<a class="srvto">Newport</a>
+								<a class="srvto">Christopher St</a>
+								<a class="srvto">9th St</a>
+								<a class="srvto">14th St</a>
+								<a class="srvto">23rd St</a>
+								<a class="srvto">33rd St</a>
+							</div>
+						</div>
+						<a class="collapsible path-wtch">Hoboken &#8226; World Trade Center</a>
+						<div class="folded">
+							<div class="timetable">
+								<a class="srvto">Hoboken</a>
+								<a class="srvto">Newport</a>
+								<a class="srvto">Exchange Place</a>
+								<a class="srvto">World Trade Center</a>
+							</div>
+						</div>
+						<a class="collapsible path-33sh">Hoboken &#8226; 33rd St</a>
+						<div class="folded">
+							<div class="timetable">
+								<a class="srvto">Hoboken</a>
+								<a class="srvto">Christopher St</a>
+								<a class="srvto">9th St</a>
+								<a class="srvto">14th St</a>
+								<a class="srvto">23rd St</a>
+								<a class="srvto">33rd St</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- NJ TRANSIT -->
+				<div class="window">
+					<a class="tag njt" target="_blank"
+						href="https://content.njtransit.com/sites/default/files/pdfs/maps/RSM_Geographic_110123.pdf">NJ
+						Transit</a><br />
+					<br />
+					<a class="collapsible njt-nec">Northeast Corridor</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">New York &#8226; Penn Stn</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto amtk">Newark &#8226; Penn Stn</a>
+							<a class="srvto amtk">Newark Liberty Intl Airport</a>
+							<a class="srvto">North Elizabeth</a>
+							<a class="srvto">Elizabeth</a>
+							<a class="srvto">Linden</a>
+							<a class="srvto">Rahway</a>
+							<a class="srvto amtk">Metropark</a>
+							<a class="srvto">Metuchen</a>
+							<a class="srvto">Edison</a>
+							<a class="srvto amtk">New Brunswick</a>
+							<a class="srvto">Jersey Ave &#10013;</a>
+							<a class="srvto amtk">Princeton Junction</a>
+							<a class="srvto">Hamilton</a>
+							<a class="srvto amtk">Trenton</a>
+						</div>
+					</div>
+					<a class="collapsible njt-acl">Atlantic City Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Atlantic City</a>
+							<a class="srvto">Absecon</a>
+							<a class="srvto">Egg Harbor City</a>
+							<a class="srvto">Hammonton</a>
+							<a class="srvto">Atco</a>
+							<a class="srvto">Lindenwold</a>
+							<a class="srvto">Cherry Hill</a>
+							<a class="srvto">Pennsauken</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+						</div>
+					</div>
+					<a class="collapsible njt-mnl">Main Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto">Kingsland</a>
+							<a class="srvto">Lyndhurst</a>
+							<a class="srvto">Delawanna</a>
+							<a class="srvto">Passaic</a>
+							<a class="srvto">Clifton</a>
+							<a class="srvto">Paterson</a>
+							<a class="srvto">Hawthorne</a>
+							<a class="srvto">Glen Rock &#8226; Main Line</a>
+							<a class="srvto">Ridgewood</a>
+							<a class="srvto">Ho-Ho-Kus</a>
+							<a class="srvto">Waldwick</a>
+							<a class="srvto">Allendale</a>
+							<a class="srvto">Ramsey</a>
+							<a class="srvto">Ramsey &#8226; Rte 17</a>
+							<a class="srvto">Hahwah</a>
+							<a class="srvto">Suffern</a>
+							<a class="srvto">Harriman</a>
+							<a class="srvto">Salisbury Mills &#8226; Cornwall</a>
+							<a class="srvto">Campbell Hall</a>
+							<a class="srvto">Middletown</a>
+							<a class="srvto">Otisville</a>
+							<a class="srvto">Port Jervis</a>
+						</div>
+					</div>
+					<a class="collapsible njt-brl">Bergen Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto">Rutherford</a>
+							<a class="srvto">Wesmont</a>
+							<a class="srvto">Garfield</a>
+							<a class="srvto">Plauderville</a>
+							<a class="srvto">Broadway</a>
+							<a class="srvto">Radburn</a>
+							<a class="srvto">Glen Rock &#8226; Boro Hall</a>
+							<a class="srvto">Ridgewood</a>
+							<a class="srvto">Ho-Ho-Kus</a>
+							<a class="srvto">Waldwick</a>
+							<a class="srvto">Allendale</a>
+							<a class="srvto">Ramsey</a>
+							<a class="srvto">Ramsey &#8226; Rte 17</a>
+							<a class="srvto">Hahwah</a>
+							<a class="srvto">Suffern</a>
+							<a class="srvto">Harriman</a>
+							<a class="srvto">Salisbury Mills &#8226; Cornwall</a>
+							<a class="srvto">Campbell Hall</a>
+							<a class="srvto">Middletown</a>
+							<a class="srvto">Otisville</a>
+							<a class="srvto">Port Jervis</a>
+						</div>
+					</div>
+					<a class="collapsible njt-mbl">Montclair &#8226; Boonton Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">New York &#8226; Penn Stn</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Newark &#8226; Broad St</a>
+							<a class="srvto">Watsessing</a>
+							<a class="srvto">Bloomfield</a>
+							<a class="srvto">Glen Ridge</a>
+							<a class="srvto">Bay Street</a>
+							<a class="srvto">Walnut Street</a>
+							<a class="srvto">Watchung Ave</a>
+							<a class="srvto">Upper Montclair</a>
+							<a class="srvto">Mountain Ave</a>
+							<a class="srvto">Montclair Heights</a>
+							<a class="srvto">Montclair State Univ</a>
+							<a class="srvto">Little Falls</a>
+							<a class="srvto">Wayne &#8226; Rte 23</a>
+							<a class="srvto">Mountain View</a>
+							<a class="srvto">Lincoln Park</a>
+							<a class="srvto">Towaco</a>
+							<a class="srvto">Boonton</a>
+							<a class="srvto">Mountain Lakes</a>
+							<a class="srvto">Denville</a>
+							<a class="srvto">Dover</a>
+							<a class="srvto">Mount Arlington</a>
+							<a class="srvto">Lake Hopatcong</a>
+							<a class="srvto">Netcong</a>
+							<a class="srvto">Mount Olive</a>
+							<a class="srvto">Hackettstown</a>
+						</div>
+					</div>
+					<a class="collapsible njt-mtl">Morristown Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">New York &#8226; Penn Stn</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Newark &#8226; Broad St</a>
+							<a class="srvto">East Orange</a>
+							<a class="srvto">Brick Church</a>
+							<a class="srvto">Orange</a>
+							<a class="srvto">Highland Ave</a>
+							<a class="srvto">Mountain Station</a>
+							<a class="srvto">South Orange</a>
+							<a class="srvto">Maplewood</a>
+							<a class="srvto">Millburn</a>
+							<a class="srvto">Short Hills</a>
+							<a class="srvto">Summit</a>
+							<a class="srvto">Chatham</a>
+							<a class="srvto">Madison</a>
+							<a class="srvto">Convent Station</a>
+							<a class="srvto">Morristown</a>
+							<a class="srvto">Morris Plains</a>
+							<a class="srvto">Mount Tabor</a>
+							<a class="srvto">Denville</a>
+							<a class="srvto">Dover</a>
+							<a class="srvto">Mount Arlington</a>
+							<a class="srvto">Lake Hopatcong</a>
+							<a class="srvto">Netcong</a>
+							<a class="srvto">Mount Olive</a>
+							<a class="srvto">Hackettstown</a>
+						</div>
+					</div>
+					<a class="collapsible njt-gsb">Gladstone Branch</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">New York &#8226; Penn Stn</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Newark &#8226; Broad St</a>
+							<a class="srvto">East Orange</a>
+							<a class="srvto">Brick Church</a>
+							<a class="srvto">Orange</a>
+							<a class="srvto">Highland Ave</a>
+							<a class="srvto">Mountain Station</a>
+							<a class="srvto">South Orange</a>
+							<a class="srvto">Maplewood</a>
+							<a class="srvto">Millburn</a>
+							<a class="srvto">Short Hills</a>
+							<a class="srvto">Summit</a>
+							<a class="srvto">New Providence</a>
+							<a class="srvto">Murray Hill</a>
+							<a class="srvto">Berkeley Heights</a>
+							<a class="srvto">Gillette</a>
+							<a class="srvto">Stirling</a>
+							<a class="srvto">Millington</a>
+							<a class="srvto">Lyons</a>
+							<a class="srvto">Basking Ridge</a>
+							<a class="srvto">Bernardsville</a>
+							<a class="srvto">Far Hills</a>
+							<a class="srvto">Peapack</a>
+							<a class="srvto">Gladstone</a>
+						</div>
+					</div>
+					<a class="collapsible njt-njcl">North Jersey Coast Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">New York &#8226; Penn Stn</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto amtk">Newark &#8226; Penn Stn</a>
+							<a class="srvto amtk">Newark Liberty Intl Airport</a>
+							<a class="srvto">North Elizabeth</a>
+							<a class="srvto">Elizabeth</a>
+							<a class="srvto">Linden</a>
+							<a class="srvto">Rahway</a>
+							<a class="srvto">Avenel</a>
+							<a class="srvto">Woodbridge</a>
+							<a class="srvto">Perth Amboy</a>
+							<a class="srvto">South Amboy</a>
+							<a class="srvto">Aberdeen-Matawan</a>
+							<a class="srvto">Middletown</a>
+							<a class="srvto">Red Bank</a>
+							<a class="srvto">Little Silver</a>
+							<a class="srvto">Monmouth Park &#10013;</a>
+							<a class="srvto">Long Branch</a>
+							<a class="srvto">Elberon</a>
+							<a class="srvto">Allenhurst</a>
+							<a class="srvto">Asbury Park</a>
+							<a class="srvto">Bradley Beach</a>
+							<a class="srvto">Belmar</a>
+							<a class="srvto">Spring Lake</a>
+							<a class="srvto">Manasquan</a>
+							<a class="srvto">Point Pleasant Beach</a>
+							<a class="srvto">Bay Head</a>
+						</div>
+					</div>
+					<a class="collapsible njt-pvl">Pascack Valley Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto">Wood-Ridge</a>
+							<a class="srvto">Teterboro</a>
+							<a class="srvto">Essex St</a>
+							<a class="srvto">Anderson St</a>
+							<a class="srvto">New Bridge Landing</a>
+							<a class="srvto">River Edge</a>
+							<a class="srvto">Oradell</a>
+							<a class="srvto">Emerson</a>
+							<a class="srvto">Westwood</a>
+							<a class="srvto">Hillsdale</a>
+							<a class="srvto">Woodcliff Lake</a>
+							<a class="srvto">Park Ridge</a>
+							<a class="srvto">Montvale</a>
+							<a class="srvto">Pearl River</a>
+							<a class="srvto">Nanuet</a>
+							<a class="srvto">Spring Valley</a>
+						</div>
+					</div>
+					<a class="collapsible njt-rvl">Raritan Valley Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">New York &#8226; Penn Stn</a>
+							<a class="srvto">Secaucus</a>
+							<a class="srvto amtk">Newark &#8226; Penn Stn</a>
+							<a class="srvto">Union</a>
+							<a class="srvto">Roselle Park</a>
+							<a class="srvto">Cranford</a>
+							<a class="srvto">Garwood</a>
+							<a class="srvto">Westfield</a>
+							<a class="srvto">Fanwood</a>
+							<a class="srvto">Netherwood</a>
+							<a class="srvto">Plainfield</a>
+							<a class="srvto">Dunellen</a>
+							<a class="srvto">Bound Brook</a>
+							<a class="srvto">Bridgewater</a>
+							<a class="srvto">Somerville</a>
+							<a class="srvto">Raritan</a>
+							<a class="srvto">North Branch</a>
+							<a class="srvto">White House</a>
+							<a class="srvto">Lebanon</a>
+							<a class="srvto">Annandale</a>
+							<a class="srvto">High Bridge</a>
+						</div>
+					</div>
+					<a class="collapsible njt-hblr">Hudson &#8226; Bergen Light Rail</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Tonnelle Ave &#8226; North Bergen</a>
+							<a class="srvto">Bergenline Ave &#8226; Union City</a>
+							<a class="srvto">Port Imperial &#8226; Weehawken</a>
+							<a class="srvto">Lincoln Harbor</a>
+							<a class="srvto">9th St &#8226; Congress St</a>
+							<a class="srvto">2nd St</a>
+							<a class="srvto">Hoboken</a>
+							<a class="srvto">Newport</a>
+							<a class="srvto">Harsimus Cove</a>
+							<a class="srvto">Harborside</a>
+							<a class="srvto">Exchange Pl</a>
+							<a class="srvto">Essex St</a>
+							<a class="srvto">Marin Blvd</a>
+							<a class="srvto">Jersey Ave</a>
+							<a class="srvto">Liberty State Pk</a>
+							<a class="srvto">Garfield Ave</a>
+							<a class="srvto">Martin Luther King Dr</a>
+							<a class="srvto">West Side Ave</a>
+							<a class="srvto">Richard St</a>
+							<a class="srvto">Danforth Ave</a>
+							<a class="srvto">45th St</a>
+							<a class="srvto">34th St</a>
+							<a class="srvto">22nd St</a>
+							<a class="srvto">8th St</a>
+						</div>
+					</div>
 
-										<a class="collapsible njt-nlr">Newark Light Rail</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">Newark &#8226; Penn Stn</a>
-														<a class="srvto">NJPAC &#8226; Center St</a>
-														<a class="srvto">Atlantic St</a>
-														<a class="srvto">Riverfront Stadium</a>
-														<a class="srvto">Newark &#8226; Broad St</a>
-														<a class="srvto">Harriet Tubman Sq</a>
-														<a class="srvto">Military Park</a>
-														<a class="srvto">Washington St</a>
-														<a class="srvto">Warren St &#8226; NJIT</a>
-														<a class="srvto">Norfolk St</a>
-														<a class="srvto">Orange St</a>
-														<a class="srvto">Park Ave</a>
-														<a class="srvto">Bloomfield Ave</a>
-														<a class="srvto">Davenport Ave</a>
-														<a class="srvto">Branch Brook Pk</a>
-														<a class="srvto">Silver Lake</a>
-														<a class="srvto">Grove St</a>
-												</div>
-										</div>
+					<a class="collapsible njt-nlr">Newark Light Rail</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">Newark &#8226; Penn Stn</a>
+							<a class="srvto">NJPAC &#8226; Center St</a>
+							<a class="srvto">Atlantic St</a>
+							<a class="srvto">Riverfront Stadium</a>
+							<a class="srvto">Newark &#8226; Broad St</a>
+							<a class="srvto">Harriet Tubman Sq</a>
+							<a class="srvto">Military Park</a>
+							<a class="srvto">Washington St</a>
+							<a class="srvto">Warren St &#8226; NJIT</a>
+							<a class="srvto">Norfolk St</a>
+							<a class="srvto">Orange St</a>
+							<a class="srvto">Park Ave</a>
+							<a class="srvto">Bloomfield Ave</a>
+							<a class="srvto">Davenport Ave</a>
+							<a class="srvto">Branch Brook Pk</a>
+							<a class="srvto">Silver Lake</a>
+							<a class="srvto">Grove St</a>
+						</div>
+					</div>
 
-										<a class="collapsible njt-rlr">River Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">Trenton</a>
-														<a class="srvto">Hamilton Ave</a>
-														<a class="srvto">Cass Street</a>
-														<a class="srvto">Bordentown</a>
-														<a class="srvto">Roebling</a>
-														<a class="srvto">Florence</a>
-														<a class="srvto">Burlington Towne Centre</a>
-														<a class="srvto">Burlington South</a>
-														<a class="srvto">Beverly &#8226; Edgewater Park</a>
-														<a class="srvto">Delanco</a>
-														<a class="srvto">Riverside</a>
-														<a class="srvto">Cinnaminson</a>
-														<a class="srvto">Riverton</a>
-														<a class="srvto">Palmyra</a>
-														<a class="srvto">Rte 73 &#8226; Pennsauken</a>
-														<a class="srvto">Pennsauken</a>
-														<a class="srvto">36th St</a>
-														<a class="srvto">Walter Rand Stn</a>
-														<a class="srvto">Cooper St &#8226; Rutgers</a>
-														<a class="srvto">Aquarium</a>
-														<a class="srvto">Entertainment Center</a>
-												</div>
-										</div>
-								</div>
-								<!-- PATCO -->
-								<div class="window">
-									<a class="tag patc">PATCO</a><br/>
-									<br/>
-									<a class="collapsible patc">PA &#8226; NJ</a>
-									<div class="folded">
-											<div class="timetable">
-												<a class="srvto">15-16th & Locust St</a>
-												<a class="srvto">12-13th & Locust St</a>
-												<a class="srvto">9-10th & Locust St</a>
-												<a class="srvto">8th & Market St</a>
-												<a class="srvto">City Hall</a>
-												<a class="srvto">Broadway</a>
-												<a class="srvto">Ferry Ave</a>
-												<a class="srvto">Collingswood</a>
-												<a class="srvto">Westmont	</a>
-												<a class="srvto">Haddonfield</a>
-												<a class="srvto">Woodcrest</a>
-												<a class="srvto">Ashland</a>
-												<a class="srvto">Lindenwold</a>
-											</div>
-									</div>
-								</div>
-								<!-- SEPTA -->
-								<div class="window">
-										<a class="tag sep" target="_blank" href="https://wwww.septa.org/wp-content/uploads/travel/line-map-rr-1.pdf">SEPTA</a><br/>
-										<br/>
-										<a class="collapsible sep-rr">Airport Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-														<a class="srvto">Eastwick</a>
-														<a class="srvto">Airport Terminal A</a>
-														<a class="srvto">Airport Terminal B</a>
-														<a class="srvto">Airport Terminal C D</a>
-														<a class="srvto">Airport Terminal E F</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Chestnut Hill E Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Chestnut Hill E</a>
-														<a class="srvto">Gravers</a>
-														<a class="srvto">Wyndmoor</a>
-														<a class="srvto">Mt. Airy</a>
-														<a class="srvto">Sedgwick</a>
-														<a class="srvto">Stenton</a>
-														<a class="srvto">Washington Ln</a>
-														<a class="srvto">Germantown</a>
-														<a class="srvto">Wister</a>
-														<a class="srvto">Wayne Jtc</a>
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Chestnut Hill W Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Chestnut Hill W</a>
-														<a class="srvto">Highland</a>
-														<a class="srvto">St. Martins</a>
-														<a class="srvto">Richard Allen Ln</a>
-														<a class="srvto">Carpenter</a>
-														<a class="srvto">Upsal</a>
-														<a class="srvto">Tulpehocken</a>
-														<a class="srvto">Chelten Ave</a>
-														<a class="srvto">Queen Ln</a>
-														<a class="srvto">North Philadelphia</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Temple Univ</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Cynwyd Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Cynwyd</a>
-														<a class="srvto">Bala</a>
-														<a class="srvto">Wynnefield Ave</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Suburban Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Fox Chase Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Fox Chase</a>
-														<a class="srvto">Ryers</a>
-														<a class="srvto">Cheltenham</a>
-														<a class="srvto">Lawndale</a>
-														<a class="srvto">Olney</a>
-														<a class="srvto">Wayne Jtc</a>
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Lansdale &#8226; Doylestown Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Doylestown</a>
-														<a class="srvto">Delaware Valley College</a>
-														<a class="srvto">New Britain</a>
-														<a class="srvto">Chalfont</a>
-														<a class="srvto">Link Belt</a>
-														<a class="srvto">Colmar</a>
-														<a class="srvto">Fortuna</a>
-														<a class="srvto">9th St Lansdale</a>
-														<a class="srvto">Lansdale</a>
-														<a class="srvto">Pennbrook</a>
-														<a class="srvto">North Wales</a>
-														<a class="srvto">Gwynedd Valley</a>
-														<a class="srvto">Penllyn</a>
-														<a class="srvto">Ambler</a>
-														<a class="srvto">Fort Washington</a>
-														<a class="srvto">Oreland</a>
-														<a class="srvto">North Hills</a>
-														<a class="srvto">Glenside</a>
-														<a class="srvto">Jenkinstown &#8226; Wyncote</a>
-														<a class="srvto">Fern Rock</a>
-														<a class="srvto">Wayne Jtc</a>
-														<a class="srvto">North Broad</a>
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Media &#8226; Wawa Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-														<a class="srvto">49th St</a>
-														<a class="srvto">Angora</a>
-														<a class="srvto">Fernwood &#8226; Yeadon</a>
-														<a class="srvto">Lansdowne</a>
-														<a class="srvto">Gladstone</a>
-														<a class="srvto">Clifton &#8226; Aldan</a>
-														<a class="srvto">Primos</a>
-														<a class="srvto">Secane</a>
-														<a class="srvto">Morton</a>
-														<a class="srvto">Swarthmore</a>
-														<a class="srvto">Wallingford</a>
-														<a class="srvto">Moylan-Rose Valley</a>
-														<a class="srvto">Media</a>
-														<a class="srvto">Elwyn</a>
-														<a class="srvto">Wawa</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Norristown &#8226; Manayunk Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Norristown &#8226; Elm St</a>
-														<a class="srvto">Main St</a>
-														<a class="srvto">Norristown</a>
-														<a class="srvto">Conshohocken</a>
-														<a class="srvto">Spring Mill</a>
-														<a class="srvto">Miquon</a>
-														<a class="srvto">Ivy Ridge</a>
-														<a class="srvto">Manayuck</a>
-														<a class="srvto">Wissahickon</a>
-														<a class="srvto">East Falls</a>
-														<a class="srvto">Allegheny</a>
-														<a class="srvto">North Broad</a>
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Paoli &#8226; Thorndale Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Overbrook</a>
-														<a class="srvto">Merion</a>
-														<a class="srvto">Nerberth</a>
-														<a class="srvto">Wynnewood</a>
-														<a class="srvto amtk">Ardmore</a>
-														<a class="srvto">Haverford</a>
-														<a class="srvto">Bryn Mawr</a>
-														<a class="srvto">Rosemont</a>
-														<a class="srvto">Villanova</a>
-														<a class="srvto">Randnor</a>
-														<a class="srvto">St. Davis</a>
-														<a class="srvto">Wayne</a>
-														<a class="srvto">Strafford</a>
-														<a class="srvto">Devon</a>
-														<a class="srvto">Berwyn</a>
-														<a class="srvto">Daylesford</a>
-														<a class="srvto amtk">Paoli</a>
-														<a class="srvto">Malvern</a>
-														<a class="srvto amtk">Exton</a>
-														<a class="srvto">Whitford</a>
-														<a class="srvto amtk">Downingtown</a>
-														<a class="srvto">Thorndale</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Trenton Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto amtk">North Philadelphia</a>
-														<a class="srvto">Bridesburg</a>
-														<a class="srvto">Tacony</a>
-														<a class="srvto">Holmesburg Jtc</a>
-														<a class="srvto">Torresdale</a>
-														<a class="srvto amtk">Cornwells Heights</a>
-														<a class="srvto">Eddington</a>
-														<a class="srvto">Croydon</a>
-														<a class="srvto">Bristol</a>
-														<a class="srvto">Levittown</a>
-														<a class="srvto amtk">Trenton</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Warminster Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Warminster</a>
-														<a class="srvto">Hatboro</a>
-														<a class="srvto">Willow Grove</a>
-														<a class="srvto">Crestmont</a>
-														<a class="srvto">Roslyn</a>
-														<a class="srvto">Ardsley</a>
-														<a class="srvto">Glenside</a>
-														<a class="srvto">Jenkinstown &#8226; Wyncote</a>
-														<a class="srvto">Elkins Park</a>
-														<a class="srvto">Melrose Park</a>
-														<a class="srvto">Fern Rock</a>
-														<a class="srvto">Wayne Jtc</a>
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">West Trenton Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Crestmont</a>
-														<a class="srvto">West Trenton</a>
-														<a class="srvto">Yardley</a>
-														<a class="srvto">Woodbourne</a>
-														<a class="srvto">Langhorne</a>
-														<a class="srvto">Neshaminy</a>
-														<a class="srvto">Trevose</a>
-														<a class="srvto">Somerton</a>
-														<a class="srvto">Forest Hills</a>
-														<a class="srvto">Philmont</a>
-														<a class="srvto">Bethayres</a>
-														<a class="srvto">Meadowbrook</a>
-														<a class="srvto">Rydal</a>
-														<a class="srvto">Noble</a>
-														<a class="srvto">Jenkinstown &#8226; Wyncote</a>
-														<a class="srvto">Elkins Park</a>
-														<a class="srvto">Melrose Park</a>
-														<a class="srvto">Fern Rock</a>
-														<a class="srvto">Wayne Jtc</a>
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-												</div>
-										</div>
-										<a class="collapsible sep-rr">Wilmington &#8226; Newark Line</a>
-										<div class="folded">
-												<div class="timetable">
-														<a class="srvto">Temple Univ</a>
-														<a class="srvto">Jefferston Stn</a>
-														<a class="srvto">Suburban Stn</a>
-														<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
-														<a class="srvto">Penn Medicine Stn</a>
-														<a class="srvto">Darby</a>
-														<a class="srvto">Curtis Park</a>
-														<a class="srvto">Sharon Hill</a>
-														<a class="srvto">Folcroft</a>
-														<a class="srvto">Glenolden</a>
-														<a class="srvto">Norwood</a>
-														<a class="srvto">Prospect Park &#8226; Moore</a>
-														<a class="srvto">Ridley Park</a>
-														<a class="srvto">Crum Lynne</a>
-														<a class="srvto">Eddystone</a>
-														<a class="srvto">Chester</a>
-														<a class="srvto">Highland Ave</a>
-														<a class="srvto">Marcus Hook</a>
-														<a class="srvto">Claymont</a>
-														<a class="srvto amtk">Wilmington</a>
-														<a class="srvto">Churchman's Crossing</a>
-														<a class="srvto amtk">Newark</a>
-												</div>
-										</div>
-										<h3>Subway / Metro</h3>
-										<div class="taglist">
-												<a class="tag sep-l">L</a>
-												<a class="tag sep-b">B1</a>
-												<a class="tag sep-b">B2</a>
-												<a class="tag sep-b">B3</a>
-												<a class="tag sep-t">T1</a>
-												<a class="tag sep-t">T2</a>
-												<a class="tag sep-t">T3</a>
-												<a class="tag sep-t">T4</a>
-												<a class="tag sep-t">T5</a>
-												<a class="tag sep-g">G</a>
-												<a class="tag sep-d">D1</a>
-												<a class="tag sep-d">D2</a>
-												<a class="tag sep-m">M</a>
-										</div>
-								</div>
-								<!-- WASHINGTON -->
-								<!--div class="window">
+					<a class="collapsible njt-rlr">River Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">Trenton</a>
+							<a class="srvto">Hamilton Ave</a>
+							<a class="srvto">Cass Street</a>
+							<a class="srvto">Bordentown</a>
+							<a class="srvto">Roebling</a>
+							<a class="srvto">Florence</a>
+							<a class="srvto">Burlington Towne Centre</a>
+							<a class="srvto">Burlington South</a>
+							<a class="srvto">Beverly &#8226; Edgewater Park</a>
+							<a class="srvto">Delanco</a>
+							<a class="srvto">Riverside</a>
+							<a class="srvto">Cinnaminson</a>
+							<a class="srvto">Riverton</a>
+							<a class="srvto">Palmyra</a>
+							<a class="srvto">Rte 73 &#8226; Pennsauken</a>
+							<a class="srvto">Pennsauken</a>
+							<a class="srvto">36th St</a>
+							<a class="srvto">Walter Rand Stn</a>
+							<a class="srvto">Cooper St &#8226; Rutgers</a>
+							<a class="srvto">Aquarium</a>
+							<a class="srvto">Entertainment Center</a>
+						</div>
+					</div>
+				</div>
+				<!-- PATCO -->
+				<div class="window">
+					<a class="tag patc">PATCO</a><br />
+					<br />
+					<a class="collapsible patc">PA &#8226; NJ</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">15-16th & Locust St</a>
+							<a class="srvto">12-13th & Locust St</a>
+							<a class="srvto">9-10th & Locust St</a>
+							<a class="srvto">8th & Market St</a>
+							<a class="srvto">City Hall</a>
+							<a class="srvto">Broadway</a>
+							<a class="srvto">Ferry Ave</a>
+							<a class="srvto">Collingswood</a>
+							<a class="srvto">Westmont </a>
+							<a class="srvto">Haddonfield</a>
+							<a class="srvto">Woodcrest</a>
+							<a class="srvto">Ashland</a>
+							<a class="srvto">Lindenwold</a>
+						</div>
+					</div>
+				</div>
+				<!-- SEPTA -->
+				<div class="window">
+					<a class="tag sep" target="_blank"
+						href="https://wwww.septa.org/wp-content/uploads/travel/line-map-rr-1.pdf">SEPTA</a><br />
+					<br />
+					<a class="collapsible sep-rr">Airport Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+							<a class="srvto">Eastwick</a>
+							<a class="srvto">Airport Terminal A</a>
+							<a class="srvto">Airport Terminal B</a>
+							<a class="srvto">Airport Terminal C D</a>
+							<a class="srvto">Airport Terminal E F</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Chestnut Hill E Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Chestnut Hill E</a>
+							<a class="srvto">Gravers</a>
+							<a class="srvto">Wyndmoor</a>
+							<a class="srvto">Mt. Airy</a>
+							<a class="srvto">Sedgwick</a>
+							<a class="srvto">Stenton</a>
+							<a class="srvto">Washington Ln</a>
+							<a class="srvto">Germantown</a>
+							<a class="srvto">Wister</a>
+							<a class="srvto">Wayne Jtc</a>
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Chestnut Hill W Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Chestnut Hill W</a>
+							<a class="srvto">Highland</a>
+							<a class="srvto">St. Martins</a>
+							<a class="srvto">Richard Allen Ln</a>
+							<a class="srvto">Carpenter</a>
+							<a class="srvto">Upsal</a>
+							<a class="srvto">Tulpehocken</a>
+							<a class="srvto">Chelten Ave</a>
+							<a class="srvto">Queen Ln</a>
+							<a class="srvto">North Philadelphia</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Temple Univ</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Cynwyd Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Cynwyd</a>
+							<a class="srvto">Bala</a>
+							<a class="srvto">Wynnefield Ave</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Suburban Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Fox Chase Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Fox Chase</a>
+							<a class="srvto">Ryers</a>
+							<a class="srvto">Cheltenham</a>
+							<a class="srvto">Lawndale</a>
+							<a class="srvto">Olney</a>
+							<a class="srvto">Wayne Jtc</a>
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Lansdale &#8226; Doylestown Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Doylestown</a>
+							<a class="srvto">Delaware Valley College</a>
+							<a class="srvto">New Britain</a>
+							<a class="srvto">Chalfont</a>
+							<a class="srvto">Link Belt</a>
+							<a class="srvto">Colmar</a>
+							<a class="srvto">Fortuna</a>
+							<a class="srvto">9th St Lansdale</a>
+							<a class="srvto">Lansdale</a>
+							<a class="srvto">Pennbrook</a>
+							<a class="srvto">North Wales</a>
+							<a class="srvto">Gwynedd Valley</a>
+							<a class="srvto">Penllyn</a>
+							<a class="srvto">Ambler</a>
+							<a class="srvto">Fort Washington</a>
+							<a class="srvto">Oreland</a>
+							<a class="srvto">North Hills</a>
+							<a class="srvto">Glenside</a>
+							<a class="srvto">Jenkinstown &#8226; Wyncote</a>
+							<a class="srvto">Fern Rock</a>
+							<a class="srvto">Wayne Jtc</a>
+							<a class="srvto">North Broad</a>
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Media &#8226; Wawa Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+							<a class="srvto">49th St</a>
+							<a class="srvto">Angora</a>
+							<a class="srvto">Fernwood &#8226; Yeadon</a>
+							<a class="srvto">Lansdowne</a>
+							<a class="srvto">Gladstone</a>
+							<a class="srvto">Clifton &#8226; Aldan</a>
+							<a class="srvto">Primos</a>
+							<a class="srvto">Secane</a>
+							<a class="srvto">Morton</a>
+							<a class="srvto">Swarthmore</a>
+							<a class="srvto">Wallingford</a>
+							<a class="srvto">Moylan-Rose Valley</a>
+							<a class="srvto">Media</a>
+							<a class="srvto">Elwyn</a>
+							<a class="srvto">Wawa</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Norristown &#8226; Manayunk Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Norristown &#8226; Elm St</a>
+							<a class="srvto">Main St</a>
+							<a class="srvto">Norristown</a>
+							<a class="srvto">Conshohocken</a>
+							<a class="srvto">Spring Mill</a>
+							<a class="srvto">Miquon</a>
+							<a class="srvto">Ivy Ridge</a>
+							<a class="srvto">Manayuck</a>
+							<a class="srvto">Wissahickon</a>
+							<a class="srvto">East Falls</a>
+							<a class="srvto">Allegheny</a>
+							<a class="srvto">North Broad</a>
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Paoli &#8226; Thorndale Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Overbrook</a>
+							<a class="srvto">Merion</a>
+							<a class="srvto">Nerberth</a>
+							<a class="srvto">Wynnewood</a>
+							<a class="srvto amtk">Ardmore</a>
+							<a class="srvto">Haverford</a>
+							<a class="srvto">Bryn Mawr</a>
+							<a class="srvto">Rosemont</a>
+							<a class="srvto">Villanova</a>
+							<a class="srvto">Randnor</a>
+							<a class="srvto">St. Davis</a>
+							<a class="srvto">Wayne</a>
+							<a class="srvto">Strafford</a>
+							<a class="srvto">Devon</a>
+							<a class="srvto">Berwyn</a>
+							<a class="srvto">Daylesford</a>
+							<a class="srvto amtk">Paoli</a>
+							<a class="srvto">Malvern</a>
+							<a class="srvto amtk">Exton</a>
+							<a class="srvto">Whitford</a>
+							<a class="srvto amtk">Downingtown</a>
+							<a class="srvto">Thorndale</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Trenton Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto amtk">North Philadelphia</a>
+							<a class="srvto">Bridesburg</a>
+							<a class="srvto">Tacony</a>
+							<a class="srvto">Holmesburg Jtc</a>
+							<a class="srvto">Torresdale</a>
+							<a class="srvto amtk">Cornwells Heights</a>
+							<a class="srvto">Eddington</a>
+							<a class="srvto">Croydon</a>
+							<a class="srvto">Bristol</a>
+							<a class="srvto">Levittown</a>
+							<a class="srvto amtk">Trenton</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Warminster Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Warminster</a>
+							<a class="srvto">Hatboro</a>
+							<a class="srvto">Willow Grove</a>
+							<a class="srvto">Crestmont</a>
+							<a class="srvto">Roslyn</a>
+							<a class="srvto">Ardsley</a>
+							<a class="srvto">Glenside</a>
+							<a class="srvto">Jenkinstown &#8226; Wyncote</a>
+							<a class="srvto">Elkins Park</a>
+							<a class="srvto">Melrose Park</a>
+							<a class="srvto">Fern Rock</a>
+							<a class="srvto">Wayne Jtc</a>
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">West Trenton Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Crestmont</a>
+							<a class="srvto">West Trenton</a>
+							<a class="srvto">Yardley</a>
+							<a class="srvto">Woodbourne</a>
+							<a class="srvto">Langhorne</a>
+							<a class="srvto">Neshaminy</a>
+							<a class="srvto">Trevose</a>
+							<a class="srvto">Somerton</a>
+							<a class="srvto">Forest Hills</a>
+							<a class="srvto">Philmont</a>
+							<a class="srvto">Bethayres</a>
+							<a class="srvto">Meadowbrook</a>
+							<a class="srvto">Rydal</a>
+							<a class="srvto">Noble</a>
+							<a class="srvto">Jenkinstown &#8226; Wyncote</a>
+							<a class="srvto">Elkins Park</a>
+							<a class="srvto">Melrose Park</a>
+							<a class="srvto">Fern Rock</a>
+							<a class="srvto">Wayne Jtc</a>
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+						</div>
+					</div>
+					<a class="collapsible sep-rr">Wilmington &#8226; Newark Line</a>
+					<div class="folded">
+						<div class="timetable">
+							<a class="srvto">Temple Univ</a>
+							<a class="srvto">Jefferston Stn</a>
+							<a class="srvto">Suburban Stn</a>
+							<a class="srvto amtk">Philadelphia &#8226; 30th St</a>
+							<a class="srvto">Penn Medicine Stn</a>
+							<a class="srvto">Darby</a>
+							<a class="srvto">Curtis Park</a>
+							<a class="srvto">Sharon Hill</a>
+							<a class="srvto">Folcroft</a>
+							<a class="srvto">Glenolden</a>
+							<a class="srvto">Norwood</a>
+							<a class="srvto">Prospect Park &#8226; Moore</a>
+							<a class="srvto">Ridley Park</a>
+							<a class="srvto">Crum Lynne</a>
+							<a class="srvto">Eddystone</a>
+							<a class="srvto">Chester</a>
+							<a class="srvto">Highland Ave</a>
+							<a class="srvto">Marcus Hook</a>
+							<a class="srvto">Claymont</a>
+							<a class="srvto amtk">Wilmington</a>
+							<a class="srvto">Churchman's Crossing</a>
+							<a class="srvto amtk">Newark</a>
+						</div>
+					</div>
+					<h3>Subway / Metro</h3>
+					<div class="taglist">
+						<a class="tag sep-l">L</a>
+						<a class="tag sep-b">B1</a>
+						<a class="tag sep-b">B2</a>
+						<a class="tag sep-b">B3</a>
+						<a class="tag sep-t">T1</a>
+						<a class="tag sep-t">T2</a>
+						<a class="tag sep-t">T3</a>
+						<a class="tag sep-t">T4</a>
+						<a class="tag sep-t">T5</a>
+						<a class="tag sep-g">G</a>
+						<a class="tag sep-d">D1</a>
+						<a class="tag sep-d">D2</a>
+						<a class="tag sep-m">M</a>
+					</div>
+				</div>
+				<!-- WASHINGTON -->
+				<!--div class="window">
 										<a class="tag marc">MARC</a><br/>
 										<br/>
 										<a class="tag lrlink">Raillink</a><br/>
@@ -1012,20 +1066,20 @@
 												<a class="tag wmata-sv">SV</a>
 										</div>
 								</div-->
-								<!-- FLORIDA -->
-								<!--div class="window">
+				<!-- FLORIDA -->
+				<!--div class="window">
 										<a class="tag briln">Brightline</a><br/>
 										<br/>
 										<a class="tag sunrl">SunRail</a><br/>
 										<br/>
 										<a class="tag trirl">&nbsp;&nbsp;&nbsp;Tri Rail</a><br/>
 								</div-->
-								<!-- METRA -->
-								<!--div class="window"><a class="tag metra">Metra</a><br/></div-->
-								<!-- SOUND TRANSIT -->
-								<!--div class="window"><a class="tag sndr">SoundTransit</a><br/></div-->
-								<!-- SAN FRANCISCO BAY AREA -->
-								<!--div class="window">
+				<!-- METRA -->
+				<!--div class="window"><a class="tag metra">Metra</a><br/></div-->
+				<!-- SOUND TRANSIT -->
+				<!--div class="window"><a class="tag sndr">SoundTransit</a><br/></div-->
+				<!-- SAN FRANCISCO BAY AREA -->
+				<!--div class="window">
 										<a class="tag ace">ACE</a><br/>
 										<br/>
 										<a class="tag smart">SMART</a><br/>
@@ -1043,8 +1097,8 @@
 												<a class="tag bart-oak">OAK</a>
 										</div>
 								</div-->
-								<!-- METROLINK -->
-								<!--div class="window">
+				<!-- METROLINK -->
+				<!--div class="window">
 										<a class="tag metlink" target="_blank" href="https://metrolinktrains.com/globalassets/schedules/optimized-schedule/alllines_timetable_jan2025.pdf">MetroLink</a><br/>
 										<br/>
 										<a class="collapsible metlink-avl">Antelope Valley</a>
@@ -1149,42 +1203,371 @@
 												<a class="tag la-metro-k">K</a>
 										</div>
 								</div-->
-						</div>
+			</div>
 
-						<div id="trip-1" class="tabcontent">
-								<div class="window">
-										<table style="text-align: left;">
-												<tr>
-														<th>FROM</th>
-														<th>&nbsp;&nbsp;</th>
-														<th>TO</th>
-												</tr>
-												<tr>
-														<td class="tag origin">Origin</td>
-														<td>&nbsp;&nbsp;</td>
-														<td class="tag terminus">Destionation</td>
-												</tr>
-												<tr>
-														<th>&nbsp;&nbsp;</th>
-												</tr>
-												<tr>
-														<th>Departure</th>
-														<th>&nbsp;&nbsp;</th>
-														<th>Duration</th>
-												</tr>
-												<tr>
-														<td class="tag heading">MM.DD.YYYY @ HH:MM</td>
-														<td>&nbsp;&nbsp;</td>
-														<td class="tag heading">0h 0m</td>
-												</tr>
-										</table>
-										<br/>
-										<hr/>
-										<br/>
-								</div>
-						</div>
-
+			<div id="trip-1" class="tabcontent">
+				<div class="window">
+					<table style="text-align: left;">
+						<tr>
+							<th>FROM</th>
+							<th>&nbsp;&nbsp;</th>
+							<th>TO</th>
+						</tr>
+						<tr>
+							<td class="tag origin">Origin</td>
+							<td>&nbsp;&nbsp;</td>
+							<td class="tag terminus">Destionation</td>
+						</tr>
+						<tr>
+							<th>&nbsp;&nbsp;</th>
+						</tr>
+						<tr>
+							<th>Departure</th>
+							<th>&nbsp;&nbsp;</th>
+							<th>Duration</th>
+						</tr>
+						<tr>
+							<td class="tag heading">MM.DD.YYYY @ HH:MM</td>
+							<td>&nbsp;&nbsp;</td>
+							<td class="tag heading">0h 0m</td>
+						</tr>
+					</table>
+					<br />
+					<hr />
+					<br />
 				</div>
-				<script src='./functions.js'></script>
-		</body>
+			</div>
+
+			<div id="nec-rte" class="tabcontent">
+				<div class="window">
+					<h2>The Northeast Corridor</h2>
+					<table class="rtemap">
+						<tbody>
+							<tr>
+								<td class="rteright"><a class="tag heading">New York Penn</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright">&#8593; to NY</td>
+								<td>&#8595; to NJ</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Secaucus</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Newark Penn</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+									<a class="tag path" href="">PATH</a>
+
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Newark Int'l Airport</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">North Elizabeth</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Elizabeth</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Linden</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Rahway</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Metropark</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Metuchen</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Edison</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">New Brunswick</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Jersey Ave</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Princeton Junction</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Hamilton</a></td>
+								<td><a class="tag njt" href="">NJ Transit</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Trenton</a></td>
+								<td>
+									<a class="tag njt" href="">NJ Transit</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag sep" href="">SEPTA</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright">&#8593; to NJ</td>
+								<td>&#8595; to PA</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Levittown</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Bristol</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Croydon</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Eddington</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Cornwells Heights</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Torresdale</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Holmesburg</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Tacony</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Bridesburg</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">North Philadelphia</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Gray 30th St</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+									<a class="tag njt" href="">NJ Transit</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Penn Medicine</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Darby</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Curtis Park</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Sharon Hill</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Folcroft</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Glenolden</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Norwood</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Prospect Park</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Ridley Park</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Crum Lynne</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Eddystone</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Chester T.C.</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Highland Ave</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Marcus Hook</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright">&#8593; to PA</td>
+								<td>&#8595; to DE</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Claymont</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Wilmington</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Churchmans Crossing</a></td>
+								<td><a class="tag sep" href="">SEPTA</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Newark</a></td>
+								<td>
+									<a class="tag sep" href="">SEPTA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright">&#8593; to DE</td>
+								<td>&#8595; to MD</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Perryville</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Aberdeen</a></td>
+								<td>
+									<a class="tag marc" href="">MARC</a>
+									<a class="tag amtk" href="">Amtrak</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Edgewood</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Martin State Airport</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Baltimore Penn</a></td>
+								<td>
+									<a class="tag marc" href="">MARC</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">West Baltimore</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Halethorpe</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">BWI Airport</a></td>
+								<td>
+									<a class="tag marc" href="">MARC</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Odenton</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Bowie State</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Seabrook</a></td>
+								<td><a class="tag marc" href="">MARC</a></td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">New Carrollton</a></td>
+								<td>
+									<a class="tag marc" href="">MARC</a>
+									<a class="tag wmata" href="">WMATA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+							<tr>
+								<td class="rteright"><a class="tag heading">Washington Union</a></td>
+								<td>
+									<a class="tag marc" href="">MARC</a>
+									<a class="tag wmata" href="">WMATA</a>
+									<a class="tag amtk" href="">Amtrak</a>
+									<a class="tag amtk-a" href="">Acela</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+		</div>
+		<script src='./functions.js'></script>
+	</body>
+
 </html>

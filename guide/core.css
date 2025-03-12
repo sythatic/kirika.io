@@ -27,6 +27,7 @@
 	--border: none;
 
 }
+
 .dark-mode {
 	--window-color: #343a40;
 	--window-invcolor: #ddd;
@@ -49,6 +50,7 @@ body {
 	background-attachment: fixed;
 	user-select: none;
 }
+
 .window {
 	border-radius: var(--border-radius);
 	border: var(--border);
@@ -85,16 +87,19 @@ body {
 	background-color: #1680a6;
 	transition: ease-out 0.15s;
 }
+
 /* Conditions */
 .selectable {
 	user-select: text;
 }
+
 /*Large Window*/
 @media only screen and (min-width: 1280px) {
 	.content {
 		margin: 0.25in 2in;
 	}
 }
+
 /*Normal Window*/
 @media only screen and (min-width: 636px) {
 
@@ -107,14 +112,17 @@ body {
 		padding: 0.5in;
 	}
 }
+
 /*Small Window*/
 @media only screen and (max-width: 850px) {
 	table {
 		width: 100%;
 	}
 }
+
 /*mobile*/
 @media only screen and (max-width: 635px) {
+
 	.window,
 	.tabs {
 		margin: 0.125in;
@@ -124,13 +132,16 @@ body {
 		padding: 0.25in;
 	}
 }
+
 a {
 	cursor: pointer;
 }
+
 /* Style the tab */
 .tabs {
 	overflow: hidden;
 }
+
 /* Style the buttons inside the tab */
 .tab {
 	color: var(--text-color);
@@ -148,10 +159,12 @@ a {
 	text-align: center;
 	padding: 10pt;
 }
+
 /* Style the tab content */
 .tabcontent {
 	display: none;
 }
+
 /*Timetable Formatting*/
 .collapsible {
 	padding: var(--obj-padding);
@@ -166,6 +179,7 @@ a {
 	white-space: nowrap;
 	text-decoration: none;
 }
+
 .collapsible:hover,
 .tag:hover,
 .tab button:hover,
@@ -173,10 +187,12 @@ a {
 	transition: ease-out 0.15s;
 	filter: brightness(1.2);
 }
+
 .folded {
 	display: none;
 	overflow: hidden;
 }
+
 .timetable {
 	color: var(--text-color);
 	font-weight: normal;
@@ -186,11 +202,13 @@ a {
 	display: grid;
 	margin: 1pt 2.5% 1pt 2.5%;
 }
+
 .srvto {
 	cursor: default;
 	padding: 1pt 4pt;
 	background: radial-gradient(ellipse at top, #ffffff33 0%, #66666633 100%);
 }
+
 /*Tag Formatting*/
 .tag {
 	padding: var(--obj-padding);
