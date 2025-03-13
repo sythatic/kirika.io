@@ -1,10 +1,10 @@
-// Function to toggle the dark mode theme
-const toggleButton = document.getElementById('light-theme');
+// Toggle 'theme1'
+const toggleButton = document.getElementById('theme-1');
 toggleButton.addEventListener('click', () => {
-	document.documentElement.classList.toggle('light-theme');
+	document.documentElement.classList.toggle('theme-1');
 });
 
-// Function to toggle the visibility of the collapsible content
+// Toggle collapsible content
 var coll = document.getElementsByClassName('collapsible');
 var i;
 
@@ -19,7 +19,7 @@ for (i = 0; i < coll.length; i++) {
 	});
 }
 
-//Tabber
+// Tabber Controller
 function openCity(evt, cityName) {
 	var i, tabcontent, tab;
 	tabcontent = document.getElementsByClassName("tabcontent");
